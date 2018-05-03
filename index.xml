@@ -6,10 +6,22 @@
     <description>Recent content on hzblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>hu-HU</language>
-    <lastBuildDate>Wed, 02 May 2018 08:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 03 May 2018 08:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://hzblog.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Facebook és a dopamin</title>
+      <link>https://hzblog.github.io/blog/2018-05-03-facebook-%C3%A9s-a-dopamin/</link>
+      <pubDate>Thu, 03 May 2018 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/blog/2018-05-03-facebook-%C3%A9s-a-dopamin/</guid>
+      <description>Youtube
+Régebben én is megosztottam az életem legszebb pillanatait facebook-on. Aztán észrevettem, hogy egy jól sikerült fénykép legalább 100x több lájkot kap, mint egy elgondolkodató vagy inspiráló hasznos gondolat.
+Hogyan optimalizálták a közösségi hálózatokat?
+A cél nyilvánvalóan az volt, hogy a felhasználókat minél több ideig lefoglalják. Persze ez is profitmaximalizálás: aki több időt tölt ezeken az oldalakon, az több reklámot néz, és potenciálisan többet is vásárol. Ha a célfüggvény az, hogy minél több időt töltsünk ott, akkor az lenne a legjobb, ha függőséget tudna okozni.</description>
+    </item>
     
     <item>
       <title>Hatékony piacok</title>
