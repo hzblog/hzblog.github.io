@@ -6,10 +6,21 @@
     <description>Recent content on hzblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>hu-HU</language>
-    <lastBuildDate>Fri, 04 May 2018 08:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 05 May 2018 08:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://hzblog.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Milyen állampapírt vegyek?</title>
+      <link>https://hzblog.github.io/blog/2018-05-05-milyen-%C3%A1llampap%C3%ADrt-vegyek/</link>
+      <pubDate>Sat, 05 May 2018 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/blog/2018-05-05-milyen-%C3%A1llampap%C3%ADrt-vegyek/</guid>
+      <description>Miután elzarándokoltunk az Államkincstár legközelebbi ügyfélszolgálatára, hogy:
+ megnyissuk az értékpapír számlánkat, Webkincstár hozzáférést igényeljünk, és megnyissuk az aktuális évre a tartós befektetési számlánkat (TBSZ),  otthon a Webkincstárba belépve az Állampapír keresővel sokféle lehetőség közül választhatunk.
+Azonban érdemes tudni, hogy egyes papírokat csak lakossági ügyfeleknek adnak el. Mivel az állam arra törekszik, hogy a magyar államadósság ne külföldi intézményi befektetők kezében, hanem inkább a magyar lakosság portfóliójában szerepeljen, az intézményi befektetők számára is elérhető diszkont kincstárjegyek (DKJ) és magyar államkötvények (MÁK) alacsony kamatához képest kiemelkedő kamatot biztosítanak az allampapir.</description>
+    </item>
     
     <item>
       <title>Idő portfólió</title>
