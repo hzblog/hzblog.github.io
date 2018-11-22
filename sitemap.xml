@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hzblog.github.io/blog/2018-11-22-j%C3%B3-h%C3%ADrek/</loc>
+    <lastmod>2018-11-22T08:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hzblog.github.io/blog/2018-10-13-a-h%C3%BAsev%C3%A9s-visszafog%C3%A1sa-mentheti-meg-a-f%C3%B6ldet/</loc>
     <lastmod>2018-10-13T08:00:00+02:00</lastmod>
   </url>
@@ -64,7 +69,7 @@
   
   <url>
     <loc>https://hzblog.github.io/post/</loc>
-    <lastmod>2018-10-13T08:00:00+02:00</lastmod>
+    <lastmod>2018-11-22T08:00:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -75,7 +80,7 @@
   
   <url>
     <loc>https://hzblog.github.io/</loc>
-    <lastmod>2018-10-13T08:00:00+02:00</lastmod>
+    <lastmod>2018-11-22T08:00:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
