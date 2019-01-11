@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Könyv on hzblog</title>
+    <link>https://hzblog.github.io/categories/k%C3%B6nyv/</link>
+    <description>Recent content in Könyv on hzblog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>hu-HU</language>
+    <lastBuildDate>Fri, 11 Jan 2019 08:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://hzblog.github.io/categories/k%C3%B6nyv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Történelmi leckék</title>
+      <link>https://hzblog.github.io/blog/2019-01-11-t%C3%B6rt%C3%A9nelmi-leck%C3%A9k/</link>
+      <pubDate>Fri, 11 Jan 2019 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/blog/2019-01-11-t%C3%B6rt%C3%A9nelmi-leck%C3%A9k/</guid>
+      <description>Nemrég olvastam ki a Lessons of History könyvet. Érdekes, rövid olvasmány, ajánlom, akár egyetértesz a szemléletével, akár nem. Néhány mondatot kigyűjtöttem belőle:
+I. Hesitations
+ Only a fool would try to compress a hundred centuries into a hundred pages of hazardous conclusions. We proceed.  II. History and the Earth
+ History is subject to geology. Let rain become too rare, and civilization disappears under sand, as in Central Asia; let it fall too furiously, and civilization will be choked with jungle, as in Central America.</description>
+    </item>
+    
+  </channel>
+</rss>

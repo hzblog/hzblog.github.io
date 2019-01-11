@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pénz on hzblog</title>
+    <link>https://hzblog.github.io/categories/p%C3%A9nz/</link>
+    <description>Recent content in Pénz on hzblog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>hu-HU</language>
+    <lastBuildDate>Sat, 05 May 2018 08:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://hzblog.github.io/categories/p%C3%A9nz/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Milyen állampapírt vegyek?</title>
+      <link>https://hzblog.github.io/blog/2018-05-05-milyen-%C3%A1llampap%C3%ADrt-vegyek/</link>
+      <pubDate>Sat, 05 May 2018 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/blog/2018-05-05-milyen-%C3%A1llampap%C3%ADrt-vegyek/</guid>
+      <description>Miután elzarándokoltunk az Államkincstár legközelebbi ügyfélszolgálatára, hogy:
+ megnyissuk az értékpapír számlánkat, Webkincstár hozzáférést igényeljünk, és megnyissuk az aktuális évre a tartós befektetési számlánkat (TBSZ),  otthon a Webkincstárba belépve az Állampapír keresővel sokféle lehetőség közül választhatunk.
+Azonban érdemes tudni, hogy egyes papírokat csak lakossági ügyfeleknek adnak el. Mivel az állam arra törekszik, hogy a magyar államadósság ne külföldi intézményi befektetők kezében, hanem inkább a magyar lakosság portfóliójában szerepeljen, az intézményi befektetők számára is elérhető diszkont kincstárjegyek (DKJ) és magyar államkötvények (MÁK) alacsony kamatához képest kiemelkedő kamatot biztosítanak az allampapir.</description>
+    </item>
+    
+    <item>
+      <title>Hatékony piacok</title>
+      <link>https://hzblog.github.io/blog/2018-05-02-hat%C3%A9kony-piacok/</link>
+      <pubDate>Wed, 02 May 2018 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/blog/2018-05-02-hat%C3%A9kony-piacok/</guid>
+      <description>A hatékony piacok elmélete szerint a részvények ára tükrözi az elérhető információkat. Anomáliák azonban előfordulnak. Ami meglepő, hogy a félreárazás sokszor fennmarad az anomáliák felfedezése után is. Az árak gyakran csak azután térnek vissza a reális szintre, ha egy professzor cikket ír a jelenségről. Ez arra utal, hogy a piac gyakran nem hatékony, és csak a publikációk teszik lehetővé, hogy a piaci szereplők a félreárazás ellen kereskedjenek. Egészen addig, amíg a félreárazás végül meg nem szűnik.</description>
+    </item>
+    
+  </channel>
+</rss>

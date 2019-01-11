@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pozitív on hzblog</title>
+    <link>https://hzblog.github.io/categories/pozit%C3%ADv/</link>
+    <description>Recent content in Pozitív on hzblog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>hu-HU</language>
+    <lastBuildDate>Thu, 10 Jan 2019 08:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://hzblog.github.io/categories/pozit%C3%ADv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Antarktiszi zöldségek</title>
+      <link>https://hzblog.github.io/blog/2019-01-10-antarktiszi-z%C3%B6lds%C3%A9gek/</link>
+      <pubDate>Thu, 10 Jan 2019 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/blog/2019-01-10-antarktiszi-z%C3%B6lds%C3%A9gek/</guid>
+      <description>Csaknem három mázsa zöldséget takarítottak be egy antarktiszi üvegházában. A sarkvidéki növényházat egy konténerben alakították ki, amelyben 13 négyzetméteren talaj, napfény és növényvédőszerek használata nélkül kezdtek termeszteni zöldséget és gyümölcsöt. Az első növényeket tavaly februárban ültette Paul Zabel kutató, aki az év végéig 115 kiló salátát, 67 kiló uborkát, 46 kiló paradicsomot, 19 kiló karalábét, 15 kiló zöldfűszert és 8 kiló hónapos retket szüretelt. Ugyanakkor az eper- és a paprikatermesztéssel nem igazán boldogult.</description>
+    </item>
+    
+    <item>
+      <title>Jó hírek</title>
+      <link>https://hzblog.github.io/blog/2018-11-22-j%C3%B3-h%C3%ADrek/</link>
+      <pubDate>Thu, 22 Nov 2018 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/blog/2018-11-22-j%C3%B3-h%C3%ADrek/</guid>
+      <description>Nemcsak a Future Crunch hírlevele mond jó híreket, néha a magyar sajtóban is megjelenik ez-az:
+ A magyar kormány 2030-ban szeretne véget vetni a szénalapú energiatermelésnek. Ezzel Magyarország lehet az első közép-kelet-európai ország, amely meghatároz egy konkrét időpontot a szén kivezetésére. A lignitalapú áramtermelés egyébként hosszútávon már nem életképes gazdaságilag a kibocsátási kvóták (ETS) árának meredek emelkedése miatt. G7 Portfolio A börzsönyi Csarna-völgy fokozottan védett részén semmilyen kisvasút építési beruházást nem támogat az agrárminisztérium, amely felügyeleti jogkörében eljárva utasította a terület vagyonkezelőjét, az Ipoly Erdő Zrt-t a beruházás engedélyeztetésére vonatkozó kérelem visszavonására.</description>
+    </item>
+    
+    <item>
+      <title>A legnagyobb kihívás</title>
+      <link>https://hzblog.github.io/blog/2018-09-28-a-legnagyobb-kih%C3%ADv%C3%A1s/</link>
+      <pubDate>Fri, 28 Sep 2018 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/blog/2018-09-28-a-legnagyobb-kih%C3%ADv%C3%A1s/</guid>
+      <description>A Haszon magazin napi hírlevele és a New York Times európai napi hírlevele gyors és hatékony módja, hogy képben legyünk a világ történéseivel, azonban van még egy hírlevél, amit mindenkinek szeretettel ajánlok: a Future Crunch hírlevelét, ami egy &amp;ldquo;intelligens optimista&amp;rdquo; hírlevél, ahol szándékosan felülreprezentáltak a jó hírek. Nem tudom ki hogy van vele, de engem gyakran lehangol, hogy mennyi értelmetlen szenvedés van a világban, és nyilván erre a legtöbb újságíró rá is játszik, mivel a tragédiák vonzzák az olvasókat.</description>
+    </item>
+    
+  </channel>
+</rss>

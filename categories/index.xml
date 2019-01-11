@@ -10,5 +10,68 @@
 	<atom:link href="https://hzblog.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Gyerek</title>
+      <link>https://hzblog.github.io/categories/gyerek/</link>
+      <pubDate>Wed, 09 May 2018 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/categories/gyerek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jóga</title>
+      <link>https://hzblog.github.io/categories/j%C3%B3ga/</link>
+      <pubDate>Fri, 05 Oct 2018 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/categories/j%C3%B3ga/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Könyv</title>
+      <link>https://hzblog.github.io/categories/k%C3%B6nyv/</link>
+      <pubDate>Fri, 11 Jan 2019 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/categories/k%C3%B6nyv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pozitív</title>
+      <link>https://hzblog.github.io/categories/pozit%C3%ADv/</link>
+      <pubDate>Thu, 10 Jan 2019 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/categories/pozit%C3%ADv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pénz</title>
+      <link>https://hzblog.github.io/categories/p%C3%A9nz/</link>
+      <pubDate>Sat, 05 May 2018 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/categories/p%C3%A9nz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tudatos</title>
+      <link>https://hzblog.github.io/categories/tudatos/</link>
+      <pubDate>Sun, 02 Dec 2018 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/categories/tudatos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vegán</title>
+      <link>https://hzblog.github.io/categories/veg%C3%A1n/</link>
+      <pubDate>Sat, 13 Oct 2018 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/categories/veg%C3%A1n/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

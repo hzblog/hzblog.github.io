@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tudatos on hzblog</title>
+    <link>https://hzblog.github.io/categories/tudatos/</link>
+    <description>Recent content in Tudatos on hzblog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>hu-HU</language>
+    <lastBuildDate>Sun, 02 Dec 2018 08:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://hzblog.github.io/categories/tudatos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A buddhizmus Laár szerint</title>
+      <link>https://hzblog.github.io/blog/2018-12-02-a-buddhizmus-la%C3%A1r-szerint/</link>
+      <pubDate>Sun, 02 Dec 2018 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/blog/2018-12-02-a-buddhizmus-la%C3%A1r-szerint/</guid>
+      <description>Ma megnéztem Laár András videóját, amiben bevezetést ad a buddhizmusba. Szórakoztató volt.
+Pár fontos gondolatot kiemelek belőle:
+ a buddhizmusnál jobb téma nagyon nehezen található a külső körülmények szintjétől nem leszünk boldogabbak az összes problémánk oka a téveszmékből (=nemtudásból) ered a tudatunk az egyetlen valóság, ami nem hagy el minket a létezés valósága kérdéses (ami elmúlt már nincs, ami csak jön az még nincs) a létezés olyan értelemben nem valóságos, hogy tőlünk (tapasztalástól) függetlenül nem valóságos &amp;ldquo;A buddhizmus úgy tartja, hogy a nők is meg tudnak világosodni.</description>
+    </item>
+    
+    <item>
+      <title>Nem is érdekel</title>
+      <link>https://hzblog.github.io/blog/2018-11-30-nem-is-%C3%A9rdekel/</link>
+      <pubDate>Fri, 30 Nov 2018 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/blog/2018-11-30-nem-is-%C3%A9rdekel/</guid>
+      <description>A teljes magyar felnőtt népesség 88%-a soha nem tájékozódik külföldi hírforrásokból.
+(Konkrétabban: 2% rendszeresen, 10% alkalmanként, 88% soha.)
+Mérték PDF Index</description>
+    </item>
+    
+    <item>
+      <title>Tudományos tények</title>
+      <link>https://hzblog.github.io/blog/2018-05-26-tudom%C3%A1nyos-t%C3%A9nyek/</link>
+      <pubDate>Sat, 26 May 2018 09:53:51 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/blog/2018-05-26-tudom%C3%A1nyos-t%C3%A9nyek/</guid>
+      <description>A nem vezető beosztású kutatók több, mint fele arról számolt be, hogy az elmúlt 12 hónapban (gyakran vagy néhány alkalommal) helyeztek rájuk nyomást a főnökeik, hogy az ő véleményüknek megfelelő eredmények jöjjenek ki &amp;ndash; derült ki a Nature 3200 kutatóval készített friss felmérése alapján. Egy másik tanulmányban pedig konkért példákkal mutatták be, hogy amikor a beosztott kutatók nem támogatják az igazolatlan &amp;ldquo;tudományos&amp;rdquo; tények publikálását, akkor kénytelenek másik munkahelyet keresni.
+A tudományos félrevezetés 9 csapdája:</description>
+    </item>
+    
+    <item>
+      <title>Idő portfólió</title>
+      <link>https://hzblog.github.io/blog/2018-05-04-id%C5%91-portf%C3%B3li%C3%B3/</link>
+      <pubDate>Fri, 04 May 2018 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/blog/2018-05-04-id%C5%91-portf%C3%B3li%C3%B3/</guid>
+      <description>Sok minden már attól jobb lesz, ha elkezdjük mérni. Én több, mint egy éve rögzítem, hogy mire mennyi időt fordítok az aTimeLogger app segítségével. Most csináltam egy statisztikát 2018 első négy hónapjáról, hogy átlagosan mivel töltöm az időmet:
+ Alvás: napi 7 óra 11 perc
+ Család: napi 7 óra 34 perc
+ ebből közös családi időtöltés napi 5 óra
+ ebből csak a feleségemmel napi 44 perc
+ ebből csak a lányommal napi 1 óra 9 perc</description>
+    </item>
+    
+    <item>
+      <title>Facebook és a dopamin</title>
+      <link>https://hzblog.github.io/blog/2018-05-03-facebook-%C3%A9s-a-dopamin/</link>
+      <pubDate>Thu, 03 May 2018 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/blog/2018-05-03-facebook-%C3%A9s-a-dopamin/</guid>
+      <description>Youtube
+Régebben én is megosztottam az életem legszebb pillanatait facebook-on. Aztán észrevettem, hogy egy jól sikerült fénykép legalább 100x több lájkot kap, mint egy elgondolkodtató vagy inspiráló hasznos gondolat.
+Hogyan optimalizálták a közösségi hálózatokat?
+A cél nyilvánvalóan az volt, hogy a felhasználókat minél több ideig lefoglalják. Persze ez is profitmaximalizálás: aki több időt tölt ezeken az oldalakon, az több reklámot néz, és potenciálisan többet is vásárol. Ha a célfüggvény az, hogy minél több időt töltsünk ott, akkor az lenne a legjobb, ha függőséget tudna okozni.</description>
+    </item>
+    
+  </channel>
+</rss>

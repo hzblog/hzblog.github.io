@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gyerek on hzblog</title>
+    <link>https://hzblog.github.io/categories/gyerek/</link>
+    <description>Recent content in Gyerek on hzblog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>hu-HU</language>
+    <lastBuildDate>Wed, 09 May 2018 08:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://hzblog.github.io/categories/gyerek/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>30 millió szó helyett</title>
+      <link>https://hzblog.github.io/blog/2018-05-09-30-milli%C3%B3-sz%C3%B3-helyett/</link>
+      <pubDate>Wed, 09 May 2018 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/blog/2018-05-09-30-milli%C3%B3-sz%C3%B3-helyett/</guid>
+      <description>1995-ben egy kutatás során 42 amerikai családban vizsgálták, hogy mennyi szót hallanak a gyerekek a mindennapjaik során, és azt találták, hogy egy gazdag családból származó gyerek közel 30 millió szóval többet hall 3 éves koráig, mint egy szegény családból származó gyerek. A szegény gyerekek szókincse emiatt kb. fele lesz a gazdag gyerekekének, és ez a hátrány később is megmarad: akik az iskolát kommunikációs hátránnyal kezdik, azok nehezebben tanulnak, így a különbségek egyre súlyosabbá válhatnak.</description>
+    </item>
+    
+    <item>
+      <title>Lányok, fiúk, pályaválasztás</title>
+      <link>https://hzblog.github.io/blog/2018-05-01-l%C3%A1nyok-fi%C3%BAk-p%C3%A1lyav%C3%A1laszt%C3%A1s/</link>
+      <pubDate>Tue, 01 May 2018 08:00:00 +0200</pubDate>
+      
+      <guid>https://hzblog.github.io/blog/2018-05-01-l%C3%A1nyok-fi%C3%BAk-p%C3%A1lyav%C3%A1laszt%C3%A1s/</guid>
+      <description>A lányok kb. ugyanolyan jók matekban, mint a fiúk, viszont mivel a lányok jobbak olvasásban, több választási lehetőségük van, és ezért arányaiban több fiú tanul tovább matekos irányban.
+Wall Street Journal
+Itt olvasható ingyen
+Eredeti publikáció
+PDF</description>
+    </item>
+    
+  </channel>
+</rss>
