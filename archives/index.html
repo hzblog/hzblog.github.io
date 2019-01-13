@@ -105,19 +105,22 @@
 
 
 <style>
-div.allposts-date, div.allposts-categories, div.allposts-title {
-    float: left;
+table.allposts, td.allposts-date, td.allposts-categories, td.allposts-title {
+  border:none;
+  vertical-align: top;
 }
-div.allposts-date {
-    clear: left;
-    width: 100px;
+td.allposts-date {
+    padding: 0 10px 0 0;
 }
-div.allposts-categories {
-    width: 100px;
+@media only screen and (max-width: 1000px) {
+    td.allposts-date {
+        display: none;
+    }
 }
-div.allposts-title {
-    width: 500px;
-    padding-bottom: 5px;
+@media only screen and (max-width: 600px) {
+    td.allposts-categories {
+        display: none;
+    }
 }
 h1 {
     margin: 0 0 10px 0;
@@ -132,179 +135,215 @@ h1 {
 
 <h1 id="minden-gondolat">Minden gondolat</h1>
  
+          <table class="allposts">
           
             
-              <div class="allposts-date">2019-01-13</div>
-              <div class="allposts-categories">
+              <tr>
+                <td class="allposts-date">2019-01-13</td>
+                <td class="allposts-categories">
                     
                     <a class="label" href="https://hzblog.github.io/categories/j%c3%b3ga">jóga</a>
                     
-              </div>
-              <div class="allposts-title"><a href="https://hzblog.github.io/blog/2019-01-13-fedezd-fel-a-tested/" title="Fedezd fel a tested">Fedezd fel a tested</a></div>
+                </td>
+                <td class="allposts-title"><a href="https://hzblog.github.io/blog/2019-01-13-fedezd-fel-a-tested/" title="Fedezd fel a tested">Fedezd fel a tested</a></td>
+              </tr>
             
           
             
-              <div class="allposts-date">2019-01-12</div>
-              <div class="allposts-categories">
+              <tr>
+                <td class="allposts-date">2019-01-12</td>
+                <td class="allposts-categories">
                     
                     <a class="label" href="https://hzblog.github.io/categories/k%c3%b6nyv">könyv</a>
                     
-              </div>
-              <div class="allposts-title"><a href="https://hzblog.github.io/blog/2019-01-12-heti-egy-k%C3%B6nyv/" title="Heti egy könyv">Heti egy könyv</a></div>
+                </td>
+                <td class="allposts-title"><a href="https://hzblog.github.io/blog/2019-01-12-heti-egy-k%C3%B6nyv/" title="Heti egy könyv">Heti egy könyv</a></td>
+              </tr>
             
           
             
-              <div class="allposts-date">2019-01-11</div>
-              <div class="allposts-categories">
+              <tr>
+                <td class="allposts-date">2019-01-11</td>
+                <td class="allposts-categories">
                     
                     <a class="label" href="https://hzblog.github.io/categories/k%c3%b6nyv">könyv</a>
                     
-              </div>
-              <div class="allposts-title"><a href="https://hzblog.github.io/blog/2019-01-11-t%C3%B6rt%C3%A9nelmi-leck%C3%A9k/" title="Történelmi leckék">Történelmi leckék</a></div>
+                </td>
+                <td class="allposts-title"><a href="https://hzblog.github.io/blog/2019-01-11-t%C3%B6rt%C3%A9nelmi-leck%C3%A9k/" title="Történelmi leckék">Történelmi leckék</a></td>
+              </tr>
             
           
             
-              <div class="allposts-date">2019-01-10</div>
-              <div class="allposts-categories">
+              <tr>
+                <td class="allposts-date">2019-01-10</td>
+                <td class="allposts-categories">
                     
                     <a class="label" href="https://hzblog.github.io/categories/pozit%c3%adv">pozitív</a>
                     
-              </div>
-              <div class="allposts-title"><a href="https://hzblog.github.io/blog/2019-01-10-antarktiszi-z%C3%B6lds%C3%A9gek/" title="Antarktiszi zöldségek">Antarktiszi zöldségek</a></div>
+                </td>
+                <td class="allposts-title"><a href="https://hzblog.github.io/blog/2019-01-10-antarktiszi-z%C3%B6lds%C3%A9gek/" title="Antarktiszi zöldségek">Antarktiszi zöldségek</a></td>
+              </tr>
             
           
             
-              <div class="allposts-date">2018-12-02</div>
-              <div class="allposts-categories">
+              <tr>
+                <td class="allposts-date">2018-12-02</td>
+                <td class="allposts-categories">
                     
                     <a class="label" href="https://hzblog.github.io/categories/tudatos">tudatos</a>
                     
-              </div>
-              <div class="allposts-title"><a href="https://hzblog.github.io/blog/2018-12-02-a-buddhizmus-la%C3%A1r-szerint/" title="A buddhizmus Laár szerint">A buddhizmus Laár szerint</a></div>
+                </td>
+                <td class="allposts-title"><a href="https://hzblog.github.io/blog/2018-12-02-a-buddhizmus-la%C3%A1r-szerint/" title="A buddhizmus Laár szerint">A buddhizmus Laár szerint</a></td>
+              </tr>
             
           
             
-              <div class="allposts-date">2018-11-30</div>
-              <div class="allposts-categories">
+              <tr>
+                <td class="allposts-date">2018-11-30</td>
+                <td class="allposts-categories">
                     
                     <a class="label" href="https://hzblog.github.io/categories/tudatos">tudatos</a>
                     
-              </div>
-              <div class="allposts-title"><a href="https://hzblog.github.io/blog/2018-11-30-nem-is-%C3%A9rdekel/" title="Nem is érdekel">Nem is érdekel</a></div>
+                </td>
+                <td class="allposts-title"><a href="https://hzblog.github.io/blog/2018-11-30-nem-is-%C3%A9rdekel/" title="Nem is érdekel">Nem is érdekel</a></td>
+              </tr>
             
           
             
-              <div class="allposts-date">2018-11-22</div>
-              <div class="allposts-categories">
+              <tr>
+                <td class="allposts-date">2018-11-22</td>
+                <td class="allposts-categories">
                     
                     <a class="label" href="https://hzblog.github.io/categories/pozit%c3%adv">pozitív</a>
                     
-              </div>
-              <div class="allposts-title"><a href="https://hzblog.github.io/blog/2018-11-22-j%C3%B3-h%C3%ADrek/" title="Jó hírek">Jó hírek</a></div>
+                </td>
+                <td class="allposts-title"><a href="https://hzblog.github.io/blog/2018-11-22-j%C3%B3-h%C3%ADrek/" title="Jó hírek">Jó hírek</a></td>
+              </tr>
             
           
             
-              <div class="allposts-date">2018-10-13</div>
-              <div class="allposts-categories">
+              <tr>
+                <td class="allposts-date">2018-10-13</td>
+                <td class="allposts-categories">
                     
                     <a class="label" href="https://hzblog.github.io/categories/veg%c3%a1n">vegán</a>
                     
-              </div>
-              <div class="allposts-title"><a href="https://hzblog.github.io/blog/2018-10-13-a-h%C3%BAsev%C3%A9s-visszafog%C3%A1sa-mentheti-meg-a-f%C3%B6ldet/" title="A húsevés visszafogása mentheti meg a Földet">A húsevés visszafogása mentheti meg a Földet</a></div>
+                </td>
+                <td class="allposts-title"><a href="https://hzblog.github.io/blog/2018-10-13-a-h%C3%BAsev%C3%A9s-visszafog%C3%A1sa-mentheti-meg-a-f%C3%B6ldet/" title="A húsevés visszafogása mentheti meg a Földet">A húsevés visszafogása mentheti meg a Földet</a></td>
+              </tr>
             
           
             
-              <div class="allposts-date">2018-10-05</div>
-              <div class="allposts-categories">
+              <tr>
+                <td class="allposts-date">2018-10-05</td>
+                <td class="allposts-categories">
                     
                     <a class="label" href="https://hzblog.github.io/categories/j%c3%b3ga">jóga</a>
                     
-              </div>
-              <div class="allposts-title"><a href="https://hzblog.github.io/blog/2018-10-05-ashtanga/" title="Ashtanga">Ashtanga</a></div>
+                </td>
+                <td class="allposts-title"><a href="https://hzblog.github.io/blog/2018-10-05-ashtanga/" title="Ashtanga">Ashtanga</a></td>
+              </tr>
             
           
             
-              <div class="allposts-date">2018-09-28</div>
-              <div class="allposts-categories">
+              <tr>
+                <td class="allposts-date">2018-09-28</td>
+                <td class="allposts-categories">
                     
                     <a class="label" href="https://hzblog.github.io/categories/pozit%c3%adv">pozitív</a>
                     
-              </div>
-              <div class="allposts-title"><a href="https://hzblog.github.io/blog/2018-09-28-a-legnagyobb-kih%C3%ADv%C3%A1s/" title="A legnagyobb kihívás">A legnagyobb kihívás</a></div>
+                </td>
+                <td class="allposts-title"><a href="https://hzblog.github.io/blog/2018-09-28-a-legnagyobb-kih%C3%ADv%C3%A1s/" title="A legnagyobb kihívás">A legnagyobb kihívás</a></td>
+              </tr>
             
           
             
-              <div class="allposts-date">2018-05-26</div>
-              <div class="allposts-categories">
+              <tr>
+                <td class="allposts-date">2018-05-26</td>
+                <td class="allposts-categories">
                     
                     <a class="label" href="https://hzblog.github.io/categories/tudatos">tudatos</a>
                     
-              </div>
-              <div class="allposts-title"><a href="https://hzblog.github.io/blog/2018-05-26-tudom%C3%A1nyos-t%C3%A9nyek/" title="Tudományos tények">Tudományos tények</a></div>
+                </td>
+                <td class="allposts-title"><a href="https://hzblog.github.io/blog/2018-05-26-tudom%C3%A1nyos-t%C3%A9nyek/" title="Tudományos tények">Tudományos tények</a></td>
+              </tr>
             
           
             
-              <div class="allposts-date">2018-05-09</div>
-              <div class="allposts-categories">
+              <tr>
+                <td class="allposts-date">2018-05-09</td>
+                <td class="allposts-categories">
                     
                     <a class="label" href="https://hzblog.github.io/categories/gyerek">gyerek</a>
                     
-              </div>
-              <div class="allposts-title"><a href="https://hzblog.github.io/blog/2018-05-09-30-milli%C3%B3-sz%C3%B3-helyett/" title="30 millió szó helyett">30 millió szó helyett</a></div>
+                </td>
+                <td class="allposts-title"><a href="https://hzblog.github.io/blog/2018-05-09-30-milli%C3%B3-sz%C3%B3-helyett/" title="30 millió szó helyett">30 millió szó helyett</a></td>
+              </tr>
             
           
             
-              <div class="allposts-date">2018-05-05</div>
-              <div class="allposts-categories">
+              <tr>
+                <td class="allposts-date">2018-05-05</td>
+                <td class="allposts-categories">
                     
                     <a class="label" href="https://hzblog.github.io/categories/p%c3%a9nz">pénz</a>
                     
-              </div>
-              <div class="allposts-title"><a href="https://hzblog.github.io/blog/2018-05-05-milyen-%C3%A1llampap%C3%ADrt-vegyek/" title="Milyen állampapírt vegyek?">Milyen állampapírt vegyek?</a></div>
+                </td>
+                <td class="allposts-title"><a href="https://hzblog.github.io/blog/2018-05-05-milyen-%C3%A1llampap%C3%ADrt-vegyek/" title="Milyen állampapírt vegyek?">Milyen állampapírt vegyek?</a></td>
+              </tr>
             
           
             
-              <div class="allposts-date">2018-05-04</div>
-              <div class="allposts-categories">
+              <tr>
+                <td class="allposts-date">2018-05-04</td>
+                <td class="allposts-categories">
                     
                     <a class="label" href="https://hzblog.github.io/categories/tudatos">tudatos</a>
                     
-              </div>
-              <div class="allposts-title"><a href="https://hzblog.github.io/blog/2018-05-04-id%C5%91-portf%C3%B3li%C3%B3/" title="Idő portfólió">Idő portfólió</a></div>
+                </td>
+                <td class="allposts-title"><a href="https://hzblog.github.io/blog/2018-05-04-id%C5%91-portf%C3%B3li%C3%B3/" title="Idő portfólió">Idő portfólió</a></td>
+              </tr>
             
           
             
-              <div class="allposts-date">2018-05-03</div>
-              <div class="allposts-categories">
+              <tr>
+                <td class="allposts-date">2018-05-03</td>
+                <td class="allposts-categories">
                     
                     <a class="label" href="https://hzblog.github.io/categories/tudatos">tudatos</a>
                     
-              </div>
-              <div class="allposts-title"><a href="https://hzblog.github.io/blog/2018-05-03-facebook-%C3%A9s-a-dopamin/" title="Facebook és a dopamin">Facebook és a dopamin</a></div>
+                </td>
+                <td class="allposts-title"><a href="https://hzblog.github.io/blog/2018-05-03-facebook-%C3%A9s-a-dopamin/" title="Facebook és a dopamin">Facebook és a dopamin</a></td>
+              </tr>
             
           
             
-              <div class="allposts-date">2018-05-02</div>
-              <div class="allposts-categories">
+              <tr>
+                <td class="allposts-date">2018-05-02</td>
+                <td class="allposts-categories">
                     
                     <a class="label" href="https://hzblog.github.io/categories/p%c3%a9nz">pénz</a>
                     
-              </div>
-              <div class="allposts-title"><a href="https://hzblog.github.io/blog/2018-05-02-hat%C3%A9kony-piacok/" title="Hatékony piacok">Hatékony piacok</a></div>
+                </td>
+                <td class="allposts-title"><a href="https://hzblog.github.io/blog/2018-05-02-hat%C3%A9kony-piacok/" title="Hatékony piacok">Hatékony piacok</a></td>
+              </tr>
             
           
             
-              <div class="allposts-date">2018-05-01</div>
-              <div class="allposts-categories">
+              <tr>
+                <td class="allposts-date">2018-05-01</td>
+                <td class="allposts-categories">
                     
                     <a class="label" href="https://hzblog.github.io/categories/gyerek">gyerek</a>
                     
-              </div>
-              <div class="allposts-title"><a href="https://hzblog.github.io/blog/2018-05-01-l%C3%A1nyok-fi%C3%BAk-p%C3%A1lyav%C3%A1laszt%C3%A1s/" title="Lányok, fiúk, pályaválasztás">Lányok, fiúk, pályaválasztás</a></div>
+                </td>
+                <td class="allposts-title"><a href="https://hzblog.github.io/blog/2018-05-01-l%C3%A1nyok-fi%C3%BAk-p%C3%A1lyav%C3%A1laszt%C3%A1s/" title="Lányok, fiúk, pályaválasztás">Lányok, fiúk, pályaválasztás</a></td>
+              </tr>
             
           
             
           
+          </table>
       </article>
     </div>
     
