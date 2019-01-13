@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hzblog.github.io/blog/2019-01-13-fedezd-fel-a-tested/</loc>
+    <lastmod>2019-01-13T08:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hzblog.github.io/blog/2019-01-12-heti-egy-k%C3%B6nyv/</loc>
     <lastmod>2019-01-12T08:00:00+01:00</lastmod>
   </url>
@@ -104,7 +109,7 @@
   
   <url>
     <loc>https://hzblog.github.io/categories/j%C3%B3ga/</loc>
-    <lastmod>2018-10-05T08:00:00+02:00</lastmod>
+    <lastmod>2019-01-13T08:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -116,7 +121,7 @@
   
   <url>
     <loc>https://hzblog.github.io/post/</loc>
-    <lastmod>2019-01-12T08:00:00+01:00</lastmod>
+    <lastmod>2019-01-13T08:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -151,7 +156,7 @@
   
   <url>
     <loc>https://hzblog.github.io/</loc>
-    <lastmod>2019-01-12T08:00:00+01:00</lastmod>
+    <lastmod>2019-01-13T08:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
