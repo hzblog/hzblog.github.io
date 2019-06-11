@@ -23,6 +23,16 @@
     </item>
     
     <item>
+      <title>ETF korrelációk</title>
+      <link>https://hzblog.github.io/blog/2019-01-16-etf-korrel%C3%A1ci%C3%B3k/</link>
+      <pubDate>Wed, 16 Jan 2019 22:00:00 +0100</pubDate>
+      
+      <guid>https://hzblog.github.io/blog/2019-01-16-etf-korrel%C3%A1ci%C3%B3k/</guid>
+      <description>ETF-ek diverzifikálásánál általában először azt nézem meg, hogy az általam érdekesnek tartott időtávon milyen az egyes ETF-ek közötti korreláció. Ebben nyújthat segítséget a Portfolio Visualizer. Az alábbi R kóddal kiszíneztem néhány népszerű ETF éves hozamának korrelációs mátrixát: (a vizsgált időszak a 2005-2018 között eltelt 14 év, amiben a 2008-as pénzügyi válság is benne van):
+library(corrplot) # Source: https://www.portfoliovisualizer.com/asset-correlations  # Tickers: SPY FEZ EWJ EEM TLT IEF SHY TIP GLD m=matrix(c(1,0.</description>
+    </item>
+    
+    <item>
       <title>Milyen állampapírt vegyek?</title>
       <link>https://hzblog.github.io/blog/2018-05-05-milyen-%C3%A1llampap%C3%ADrt-vegyek/</link>
       <pubDate>Sat, 05 May 2018 08:00:00 +0200</pubDate>

@@ -184,6 +184,90 @@
         
 
 <header>
+    <p class="meta">2019. január 16.
+         - 2 perc olvasnivaló 
+         - <a href="https://hzblog.github.io/blog/2019-01-16-etf-korrel%C3%A1ci%C3%B3k/#disqus_thread">Comments</a>
+
+        
+        
+        
+            - <a class="label" href="https://hzblog.github.io/categories/p%c3%a9nz/">pénz </a>
+        
+    </p>
+    <h1 class="entry-title">
+        <a href="https://hzblog.github.io/blog/2019-01-16-etf-korrel%C3%A1ci%C3%B3k/">ETF korrelációk</a>
+    </h1>
+</header>
+
+
+        
+        <p>ETF-ek diverzifikálásánál általában először azt nézem meg, hogy az általam érdekesnek tartott időtávon milyen az egyes ETF-ek közötti korreláció. Ebben nyújthat segítséget a <a href="https://www.portfoliovisualizer.com/asset-correlations" target="_blank">Portfolio Visualizer</a>. Az alábbi R kóddal kiszíneztem néhány népszerű ETF éves hozamának korrelációs mátrixát: (a vizsgált időszak a 2005-2018 között eltelt 14 év, amiben a 2008-as pénzügyi válság is benne van):</p>
+<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="kn">library</span><span class="p">(</span>corrplot<span class="p">)</span>
+
+<span class="c1"># Source: https://www.portfoliovisualizer.com/asset-correlations </span>
+<span class="c1">#         Tickers: SPY FEZ EWJ EEM TLT IEF SHY TIP GLD</span>
+
+m<span class="o">=</span><span class="kt">matrix</span><span class="p">(</span><span class="kt">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">0.82</span><span class="p">,</span><span class="m">0.73</span><span class="p">,</span><span class="m">0.69</span><span class="p">,</span><span class="m">-0.63</span><span class="p">,</span><span class="m">-0.7</span><span class="p">,</span><span class="m">-0.6</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">-0.01</span><span class="p">,</span>
+           <span class="m">0.82</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.7</span><span class="p">,</span><span class="m">0.81</span><span class="p">,</span><span class="m">-0.67</span><span class="p">,</span><span class="m">-0.67</span><span class="p">,</span><span class="m">-0.25</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0.17</span><span class="p">,</span>
+           <span class="m">0.73</span><span class="p">,</span><span class="m">0.7</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.55</span><span class="p">,</span><span class="m">-0.55</span><span class="p">,</span><span class="m">-0.63</span><span class="p">,</span><span class="m">-0.51</span><span class="p">,</span><span class="m">-0.3</span><span class="p">,</span><span class="m">-0.07</span><span class="p">,</span>
+           <span class="m">0.69</span><span class="p">,</span><span class="m">0.81</span><span class="p">,</span><span class="m">0.55</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">-0.57</span><span class="p">,</span><span class="m">-0.53</span><span class="p">,</span><span class="m">-0.17</span><span class="p">,</span><span class="m">0.35</span><span class="p">,</span><span class="m">0.59</span><span class="p">,</span>
+           <span class="m">-0.63</span><span class="p">,</span><span class="m">-0.67</span><span class="p">,</span><span class="m">-0.55</span><span class="p">,</span><span class="m">-0.57</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.94</span><span class="p">,</span><span class="m">0.4</span><span class="p">,</span><span class="m">0.31</span><span class="p">,</span><span class="m">0.1</span><span class="p">,</span>
+           <span class="m">-0.7</span><span class="p">,</span><span class="m">-0.67</span><span class="p">,</span><span class="m">-0.63</span><span class="p">,</span><span class="m">-0.53</span><span class="p">,</span><span class="m">0.94</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.6</span><span class="p">,</span><span class="m">0.43</span><span class="p">,</span><span class="m">0.27</span><span class="p">,</span>
+           <span class="m">-0.6</span><span class="p">,</span><span class="m">-0.25</span><span class="p">,</span><span class="m">-0.51</span><span class="p">,</span><span class="m">-0.17</span><span class="p">,</span><span class="m">0.4</span><span class="p">,</span><span class="m">0.6</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.21</span><span class="p">,</span><span class="m">0.44</span><span class="p">,</span>
+           <span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">-0.3</span><span class="p">,</span><span class="m">0.35</span><span class="p">,</span><span class="m">0.31</span><span class="p">,</span><span class="m">0.43</span><span class="p">,</span><span class="m">0.21</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.72</span><span class="p">,</span>
+           <span class="m">-0.01</span><span class="p">,</span><span class="m">0.17</span><span class="p">,</span><span class="m">-0.07</span><span class="p">,</span><span class="m">0.59</span><span class="p">,</span><span class="m">0.1</span><span class="p">,</span><span class="m">0.27</span><span class="p">,</span><span class="m">0.44</span><span class="p">,</span><span class="m">0.72</span><span class="p">,</span><span class="m">1</span><span class="p">),</span>
+         nrow<span class="o">=</span><span class="m">9</span><span class="p">,</span>ncol<span class="o">=</span><span class="m">9</span><span class="p">)</span>
+<span class="kp">rownames</span><span class="p">(</span>m<span class="p">)</span> <span class="o">&lt;-</span> <span class="kt">c</span><span class="p">(</span><span class="s">&#39;SPY&#39;</span><span class="p">,</span><span class="s">&#39;FEZ&#39;</span><span class="p">,</span><span class="s">&#39;EWJ&#39;</span><span class="p">,</span><span class="s">&#39;EEM&#39;</span><span class="p">,</span><span class="s">&#39;TLT&#39;</span><span class="p">,</span><span class="s">&#39;IEF&#39;</span><span class="p">,</span><span class="s">&#39;SHY&#39;</span><span class="p">,</span><span class="s">&#39;TIP&#39;</span><span class="p">,</span><span class="s">&#39;GLD&#39;</span><span class="p">)</span>
+<span class="kp">colnames</span><span class="p">(</span>m<span class="p">)</span> <span class="o">&lt;-</span> <span class="kp">rownames</span><span class="p">(</span>m<span class="p">)</span>
+
+cols <span class="o">&lt;-</span> <span class="kt">c</span><span class="p">(</span><span class="s">&#39;#a50026&#39;</span><span class="p">,</span><span class="s">&#39;#d73027&#39;</span><span class="p">,</span><span class="s">&#39;#f46d43&#39;</span><span class="p">,</span><span class="s">&#39;#fdae61&#39;</span><span class="p">,</span><span class="s">&#39;#fee090&#39;</span><span class="p">,</span>
+          <span class="s">&#39;#e0f3f8&#39;</span><span class="p">,</span><span class="s">&#39;#abd9e9&#39;</span><span class="p">,</span><span class="s">&#39;#74add1&#39;</span><span class="p">,</span><span class="s">&#39;#4575b4&#39;</span><span class="p">,</span><span class="s">&#39;#313695&#39;</span><span class="p">)</span>
+
+corrplot<span class="p">(</span>m<span class="p">,</span> method<span class="o">=</span><span class="s">&#39;color&#39;</span><span class="p">,</span> col<span class="o">=</span>cols<span class="p">,</span> addCoef.col <span class="o">=</span> <span class="s">&#39;white&#39;</span><span class="p">,</span> tl.col<span class="o">=</span><span class="s">&#39;black&#39;</span><span class="p">,</span> outline<span class="o">=</span><span class="bp">T</span><span class="p">)</span></code></pre></div>
+<p>Az eredmény így néz ki:</p>
+
+<p><img src="/img/2019_01_etfcorr.png" alt="ETF korrelációs mátrix" /></p>
+
+<p>Ahol a korreláció közel van +1-hez, ott nincs sok értelme a diverzifikációnak, mert a két ETF vagy egyszere szárnyal vagy egyszerre zuhan. Erre példa a TLT-IEF kombináció. Ha a korreláció -1-hez van közel, akkor azt lehet mondani, hogy amikor az egyik ETF szárnyal, akkor a másik zuhan, erre példa a SPY-TLT kombináció. (Nem véletlenül találták ki a részvény+kötvény portfoliókat.) A korreláció 0 körüli értéke azt mutatja, hogy két ETF egymástól függetlenül viselkedik, ilyen például az SPY-TIP.</p>
+
+<p>Mik is ezek a betűk?</p>
+
+<ul>
+<li>SPY: amerikai részvények (konkrétan az 500 legnagyobb tőzsdei vállalat az USA-ban)</li>
+<li>FEZ: európai részvények (az 50 legnagyobb tőzsdei vállalat az EU-ba)</li>
+<li>EWJ: japán részvények (MSCI Japan indexben szereplő 322 vállalat)</li>
+<li>EEM: fejlődő országok részvényei (Kína, Dél-Korea, India, Brazília, Dél-Afrika, Oroszország, stb.)</li>
+<li>TLT: hosszú lejáratú (fix kamatozású) amerikai államkötvények (20+ év)</li>
+<li>IEF: közepes lejáratú (fix kamatozású) amerikai államkötvények (7-10 év)</li>
+<li>SHY: rövid lejáratú (fix kamatozású) amerikai államkötvények (1-3 év)</li>
+<li>TIP: az amerikai inflációt követő (változó kamatozású) államkötvények (TIPS)</li>
+<li>GLD: arany</li>
+</ul>
+
+<p>Három csoportot lehet azonosítani a korrelációs mátrixon:</p>
+
+<ol>
+<li>A részvény ETF-ek között erős a korreláció, ez az első csoport: SPY-FEZ-EWJ-EEM.</li>
+<li>A fix kötvények között szintén erős a korrláció, ez a 2. csoport: TLT-IEF-SHY.</li>
+<li>A harmadik csoportba az infláció követők kerültek: a TIPS-arany korreláció 0.72.</li>
+</ol>
+
+<p>Ez azért fontos, mert a vizsgált 14 évben láthatóan elsősorban az számított, hogy a portfolióban mennyi részvény, mennyi kötvény és mennyi infláció követő eszköz volt. Hogy konkrétan melyik ország részvényei vagy milyen lejárati idejű kötvények, az másodlagos volt. Hasonlóan az is másodlagos volt, hogy az infláció követését erre kialakított TIPS kötvényekkel vagy arany befektetéssel valósították meg.</p>
+
+<p>Nyilván nem teljesen mindegy, mert pl. a részvények közül az utóbbi években az amerikai piac látványosan felülteljesített a többi piachoz képest, míg korábban voltak időszakok, amikor a fejlődő országok vagy éppen Japán volt a favorit. De ez már inkább az időzítés témaköre, amit szerintem halandó ember úgysem tud kellő bizonyossággal eltalálni.</p>
+
+<p>Talán hasznosabb azt átgondolni, hogy a látott korrelációk vajon mennyit változhatnak a jövőben.</p>
+
+        
+
+    </article>
+    
+    <article>
+
+        
+        
+
+<header>
     <p class="meta">2019. január 13.
          - 1 perc olvasnivaló 
          - <a href="https://hzblog.github.io/blog/2019-01-13-fedezd-fel-a-tested/#disqus_thread">Comments</a>
@@ -369,45 +453,6 @@
 
     </article>
     
-    <article>
-
-        
-        
-
-<header>
-    <p class="meta">2019. január 10.
-         - 1 perc olvasnivaló 
-         - <a href="https://hzblog.github.io/blog/2019-01-10-antarktiszi-z%C3%B6lds%C3%A9gek/#disqus_thread">Comments</a>
-
-        
-        
-        
-            - <a class="label" href="https://hzblog.github.io/categories/pozit%c3%adv/">pozitív </a>
-        
-    </p>
-    <h1 class="entry-title">
-        <a href="https://hzblog.github.io/blog/2019-01-10-antarktiszi-z%C3%B6lds%C3%A9gek/">Antarktiszi zöldségek</a>
-    </h1>
-</header>
-
-
-        
-        <p>Csaknem három mázsa zöldséget takarítottak be egy antarktiszi üvegházában. A sarkvidéki növényházat egy konténerben alakították ki, amelyben 13 négyzetméteren talaj, napfény és növényvédőszerek használata nélkül kezdtek termeszteni zöldséget és gyümölcsöt. Az első növényeket tavaly februárban ültette Paul Zabel kutató, aki az év végéig 115 kiló salátát, 67 kiló uborkát, 46 kiló paradicsomot, 19 kiló karalábét, 15 kiló zöldfűszert és 8 kiló hónapos retket szüretelt. Ugyanakkor az eper- és a paprikatermesztéssel nem igazán boldogult.</p>
-
-<p>Így néz ki a konténer:</p>
-
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/ks51ArjgaPQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-
-<p><a href="https://www.youtube.com/watch?v=ks51ArjgaPQ" target="_blank">Youtube</a></p>
-
-        
-
-    </article>
-    
     
     
 
@@ -515,6 +560,12 @@
           
             
               <li class="post">
+                <a href="/blog/2019-01-16-etf-korrel%C3%A1ci%C3%B3k/">ETF korrelációk</a>
+              </li>
+            
+          
+            
+              <li class="post">
                 <a href="/blog/2019-01-13-fedezd-fel-a-tested/">Fedezd fel a tested</a>
               </li>
             
@@ -522,12 +573,6 @@
             
               <li class="post">
                 <a href="/blog/2019-01-12-heti-egy-k%C3%B6nyv/">Heti egy könyv</a>
-              </li>
-            
-          
-            
-              <li class="post">
-                <a href="/blog/2019-01-11-t%C3%B6rt%C3%A9nelmi-leck%C3%A9k/">Történelmi leckék</a>
               </li>
             
           
