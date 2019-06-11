@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hzblog.github.io/blog/2019-06-11-minimalizmus-a-gyereknevel%C3%A9sben/</loc>
+    <lastmod>2019-06-11T08:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hzblog.github.io/blog/2019-02-04-kock%C3%A1zatok/</loc>
+    <lastmod>2019-02-04T08:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hzblog.github.io/blog/2019-01-13-fedezd-fel-a-tested/</loc>
     <lastmod>2019-01-13T08:00:00+01:00</lastmod>
   </url>
@@ -121,19 +131,19 @@
   
   <url>
     <loc>https://hzblog.github.io/post/</loc>
-    <lastmod>2019-01-13T08:00:00+01:00</lastmod>
+    <lastmod>2019-06-11T08:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hzblog.github.io/categories/pozit%C3%ADv/</loc>
-    <lastmod>2019-01-10T08:00:00+02:00</lastmod>
+    <lastmod>2019-06-11T08:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hzblog.github.io/categories/p%C3%A9nz/</loc>
-    <lastmod>2018-05-05T08:00:00+02:00</lastmod>
+    <lastmod>2019-02-04T08:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -156,7 +166,7 @@
   
   <url>
     <loc>https://hzblog.github.io/</loc>
-    <lastmod>2019-01-13T08:00:00+01:00</lastmod>
+    <lastmod>2019-06-11T08:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   

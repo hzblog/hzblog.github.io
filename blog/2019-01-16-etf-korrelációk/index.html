@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+  
+  
+    
+    
+      <link href="/css/fonts.css" rel="stylesheet" type="text/css">
+    
+  
+
+  
+  <title>ETF korrelációk</title>
+
+  
+  
+  <link rel="stylesheet" href="/css/hugo-octopress.css">
+
+  
+  
+
+  
+    <link rel="stylesheet" href="/css/fork-awesome.min.css">
+  
+
+  
+  <link href="https://hzblog.github.io/favicon.png" rel="icon">
+
+  
+  
+  
+
+  
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <meta name="author" content="hz">
+
+  
+  <meta name="generator" content="Hugo 0.51" />
+
+  
+  
+
+</head>
+<body>
+
+
+<header role="banner"><hgroup>
+  
+  <h1><a href="https://hzblog.github.io/">hzblog</a></h1>
+    <h2>gondolatok minden lény javára</h2>
+</hgroup></header>
+
+
+<nav role="navigation">
+<fieldset class="mobile-nav">
+  
+  <select onchange="location = this.value;">
+    <option value="">Navigate…</option>
+      
+        <option value="https://hzblog.github.io/">» Blog</option>
+      
+        <option value="https://hzblog.github.io/archives/">» Archívum</option>
+      
+
+  </select>
+</fieldset>
+
+
+<ul class="main-navigation">
+  
+  
+    
+      <li><a href="https://hzblog.github.io/" title="Blog">Blog</a></li>
+    
+  
+    
+      <li><a href="https://hzblog.github.io/archives/" title="Archívum" >Archívum</a></li>
+    
+  
+</ul>
+
+
+<ul class="subscription">
+  
+    
+        <a href="https://hzblog.github.io/index.xml" target="_blank" type="application/rss+xml" title="RSS"><i class="fa fa-rss-square fa-lg"></i></a>
+    
+  
+
+</ul>
+
+
+</nav>
+
+
+<div id="main">
+  <div id="content">
+    <div>
+      <article class="hentry" role="article">
+
+        
+        
+
+<header>
+    <p class="meta">2019. január 16.
+         - 2 perc olvasnivaló 
+         - <a href="https://hzblog.github.io/blog/2019-01-16-etf-korrel%C3%A1ci%C3%B3k/#disqus_thread">Comments</a>
+
+        
+        
+        
+            - <a class="label" href="https://hzblog.github.io/categories/p%c3%a9nz/">pénz </a>
+        
+    </p>
+    <h1 class="entry-title">
+         ETF korrelációk 
+    </h1>
+</header>
+
+
+        <div class="entry-content">
+          
+          
+          
+          
+          <p>ETF-ek diverzifikálásánál általában először azt nézem meg, hogy az általam érdekesnek tartott időtávon milyen az egyes ETF-ek közötti korreláció. Ebben nyújthat segítséget a <a href="https://www.portfoliovisualizer.com/asset-correlations" target="_blank">Portfolio Visualizer</a>. Az alábbi R kóddal kiszíneztem néhány népszerű ETF éves hozamának korrelációs mátrixát: (a vizsgált időszak a 2005-2018 között eltelt 14 év, amiben a 2008-as pénzügyi válság is benne van):</p>
+<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="kn">library</span><span class="p">(</span>corrplot<span class="p">)</span>
+
+<span class="c1"># Source: https://www.portfoliovisualizer.com/asset-correlations </span>
+<span class="c1">#         Tickers: SPY FEZ EWJ EEM TLT IEF SHY TIP GLD</span>
+
+m<span class="o">=</span><span class="kt">matrix</span><span class="p">(</span><span class="kt">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">0.82</span><span class="p">,</span><span class="m">0.73</span><span class="p">,</span><span class="m">0.69</span><span class="p">,</span><span class="m">-0.63</span><span class="p">,</span><span class="m">-0.7</span><span class="p">,</span><span class="m">-0.6</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">-0.01</span><span class="p">,</span>
+           <span class="m">0.82</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.7</span><span class="p">,</span><span class="m">0.81</span><span class="p">,</span><span class="m">-0.67</span><span class="p">,</span><span class="m">-0.67</span><span class="p">,</span><span class="m">-0.25</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0.17</span><span class="p">,</span>
+           <span class="m">0.73</span><span class="p">,</span><span class="m">0.7</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.55</span><span class="p">,</span><span class="m">-0.55</span><span class="p">,</span><span class="m">-0.63</span><span class="p">,</span><span class="m">-0.51</span><span class="p">,</span><span class="m">-0.3</span><span class="p">,</span><span class="m">-0.07</span><span class="p">,</span>
+           <span class="m">0.69</span><span class="p">,</span><span class="m">0.81</span><span class="p">,</span><span class="m">0.55</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">-0.57</span><span class="p">,</span><span class="m">-0.53</span><span class="p">,</span><span class="m">-0.17</span><span class="p">,</span><span class="m">0.35</span><span class="p">,</span><span class="m">0.59</span><span class="p">,</span>
+           <span class="m">-0.63</span><span class="p">,</span><span class="m">-0.67</span><span class="p">,</span><span class="m">-0.55</span><span class="p">,</span><span class="m">-0.57</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.94</span><span class="p">,</span><span class="m">0.4</span><span class="p">,</span><span class="m">0.31</span><span class="p">,</span><span class="m">0.1</span><span class="p">,</span>
+           <span class="m">-0.7</span><span class="p">,</span><span class="m">-0.67</span><span class="p">,</span><span class="m">-0.63</span><span class="p">,</span><span class="m">-0.53</span><span class="p">,</span><span class="m">0.94</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.6</span><span class="p">,</span><span class="m">0.43</span><span class="p">,</span><span class="m">0.27</span><span class="p">,</span>
+           <span class="m">-0.6</span><span class="p">,</span><span class="m">-0.25</span><span class="p">,</span><span class="m">-0.51</span><span class="p">,</span><span class="m">-0.17</span><span class="p">,</span><span class="m">0.4</span><span class="p">,</span><span class="m">0.6</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.21</span><span class="p">,</span><span class="m">0.44</span><span class="p">,</span>
+           <span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">-0.3</span><span class="p">,</span><span class="m">0.35</span><span class="p">,</span><span class="m">0.31</span><span class="p">,</span><span class="m">0.43</span><span class="p">,</span><span class="m">0.21</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.72</span><span class="p">,</span>
+           <span class="m">-0.01</span><span class="p">,</span><span class="m">0.17</span><span class="p">,</span><span class="m">-0.07</span><span class="p">,</span><span class="m">0.59</span><span class="p">,</span><span class="m">0.1</span><span class="p">,</span><span class="m">0.27</span><span class="p">,</span><span class="m">0.44</span><span class="p">,</span><span class="m">0.72</span><span class="p">,</span><span class="m">1</span><span class="p">),</span>
+         nrow<span class="o">=</span><span class="m">9</span><span class="p">,</span>ncol<span class="o">=</span><span class="m">9</span><span class="p">)</span>
+<span class="kp">rownames</span><span class="p">(</span>m<span class="p">)</span> <span class="o">&lt;-</span> <span class="kt">c</span><span class="p">(</span><span class="s">&#39;SPY&#39;</span><span class="p">,</span><span class="s">&#39;FEZ&#39;</span><span class="p">,</span><span class="s">&#39;EWJ&#39;</span><span class="p">,</span><span class="s">&#39;EEM&#39;</span><span class="p">,</span><span class="s">&#39;TLT&#39;</span><span class="p">,</span><span class="s">&#39;IEF&#39;</span><span class="p">,</span><span class="s">&#39;SHY&#39;</span><span class="p">,</span><span class="s">&#39;TIP&#39;</span><span class="p">,</span><span class="s">&#39;GLD&#39;</span><span class="p">)</span>
+<span class="kp">colnames</span><span class="p">(</span>m<span class="p">)</span> <span class="o">&lt;-</span> <span class="kp">rownames</span><span class="p">(</span>m<span class="p">)</span>
+
+cols <span class="o">&lt;-</span> <span class="kt">c</span><span class="p">(</span><span class="s">&#39;#a50026&#39;</span><span class="p">,</span><span class="s">&#39;#d73027&#39;</span><span class="p">,</span><span class="s">&#39;#f46d43&#39;</span><span class="p">,</span><span class="s">&#39;#fdae61&#39;</span><span class="p">,</span><span class="s">&#39;#fee090&#39;</span><span class="p">,</span>
+          <span class="s">&#39;#e0f3f8&#39;</span><span class="p">,</span><span class="s">&#39;#abd9e9&#39;</span><span class="p">,</span><span class="s">&#39;#74add1&#39;</span><span class="p">,</span><span class="s">&#39;#4575b4&#39;</span><span class="p">,</span><span class="s">&#39;#313695&#39;</span><span class="p">)</span>
+
+corrplot<span class="p">(</span>m<span class="p">,</span> method<span class="o">=</span><span class="s">&#39;color&#39;</span><span class="p">,</span> col<span class="o">=</span>cols<span class="p">,</span> addCoef.col <span class="o">=</span> <span class="s">&#39;white&#39;</span><span class="p">,</span> tl.col<span class="o">=</span><span class="s">&#39;black&#39;</span><span class="p">,</span> outline<span class="o">=</span><span class="bp">T</span><span class="p">)</span></code></pre></div>
+<p>Az eredmény így néz ki:</p>
+
+<p><img src="/img/2019_01_etfcorr.png" alt="ETF korrelációs mátrix" /></p>
+
+<p>Ahol a korreláció közel van +1-hez, ott nincs sok értelme a diverzifikációnak, mert a két ETF vagy egyszere szárnyal vagy egyszerre zuhan. Erre példa a TLT-IEF kombináció. Ha a korreláció -1-hez van közel, akkor azt lehet mondani, hogy amikor az egyik ETF szárnyal, akkor a másik zuhan, erre példa a SPY-TLT kombináció. (Nem véletlenül találták ki a részvény+kötvény portfoliókat.) A korreláció 0 körüli értéke azt mutatja, hogy két ETF egymástól függetlenül viselkedik, ilyen például az SPY-TIP.</p>
+
+<p>Mik is ezek a betűk?</p>
+
+<ul>
+<li>SPY: amerikai részvények (konkrétan az 500 legnagyobb tőzsdei vállalat az USA-ban)</li>
+<li>FEZ: európai részvények (az 50 legnagyobb tőzsdei vállalat az EU-ba)</li>
+<li>EWJ: japán részvények (MSCI Japan indexben szereplő 322 vállalat)</li>
+<li>EEM: fejlődő országok részvényei (Kína, Dél-Korea, India, Brazília, Dél-Afrika, Oroszország, stb.)</li>
+<li>TLT: hosszú lejáratú (fix kamatozású) amerikai államkötvények (20+ év)</li>
+<li>IEF: közepes lejáratú (fix kamatozású) amerikai államkötvények (7-10 év)</li>
+<li>SHY: rövid lejáratú (fix kamatozású) amerikai államkötvények (1-3 év)</li>
+<li>TIP: az amerikai inflációt követő (változó kamatozású) államkötvények (TIPS)</li>
+<li>GLD: arany</li>
+</ul>
+
+<p>Három csoportot lehet azonosítani a korrelációs mátrixon:</p>
+
+<ol>
+<li>A részvény ETF-ek között erős a korreláció, ez az első csoport: SPY-FEZ-EWJ-EEM.</li>
+<li>A fix kötvények között szintén erős a korrláció, ez a 2. csoport: TLT-IEF-SHY.</li>
+<li>A harmadik csoportba az infláció követők kerültek: a TIPS-arany korreláció 0.72.</li>
+</ol>
+
+<p>Ez azért fontos, mert a vizsgált 14 évben láthatóan elsősorban az számított, hogy a portfolióban mennyi részvény, mennyi kötvény és mennyi infláció követő eszköz volt. Hogy konkrétan melyik ország részvényei vagy milyen lejárati idejű kötvények, az másodlagos volt. Hasonlóan az is másodlagos volt, hogy az infláció követését erre kialakított TIPS kötvényekkel vagy arany befektetéssel valósították meg.</p>
+
+<p>Nyilván nem teljesen mindegy, mert pl. a részvények közül az utóbbi években az amerikai piac látványosan felülteljesített a többi piachoz képest, míg korábban voltak időszakok, amikor a fejlődő országok vagy éppen Japán volt a favorit. De ez már inkább az időzítés témaköre, amit szerintem halandó ember úgysem tud kellő bizonyossággal eltalálni.</p>
+
+<p>Talán hasznosabb azt átgondolni, hogy a látott korrelációk vajon mennyit változhatnak a jövőben.</p>
+
+        </div>
+        
+
+<footer>
+  <p class="meta">
+    <span class="byline author vcard"><span class="fn">hz</span></span>
+    
+    <time>2019. január 16.</time>
+    
+    </span>
+  </p>
+
+  
+  
+
+  
+
+  <p class="meta">
+    
+        <a class="basic-alignment left" href="https://hzblog.github.io/blog/2019-01-13-fedezd-fel-a-tested/" title="Fedezd fel a tested">Fedezd fel a tested</a>
+    
+
+    
+  </p>
+  
+    
+      <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'hzblog';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+  
+</footer>
+
+      </article>
+    </div>
+    
+
+<aside class="sidebar thirds">
+  <section class="first odd">
+
+    
+      <h1>hzblog.github.io</h1>
+    
+
+    <p>
+      
+        Tudatosság, pozitív szemlélet, gyereknevelés, pénzügyek, jóga, és még ami foglalkoztat&hellip;
+      
+    </p>
+  </section>
+
+
+
+  
+  <ul class="sidebar-nav">
+    <li class="sidebar-nav-item">
+      
+      
+      
+      
+      
+         
+      
+      
+      
+      
+      
+      
+      
+      
+
+    
+    
+    </li>
+  </ul>
+
+  
+  
+  
+    
+      <section class="even">
+        <h1>Legújabb gondolatok</h1>
+        <ul id="recent_posts">
+          
+          
+            
+              <li class="post">
+                <a href="/blog/2019-01-16-etf-korrel%C3%A1ci%C3%B3k/">ETF korrelációk</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2019-01-13-fedezd-fel-a-tested/">Fedezd fel a tested</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2019-01-12-heti-egy-k%C3%B6nyv/">Heti egy könyv</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2019-01-11-t%C3%B6rt%C3%A9nelmi-leck%C3%A9k/">Történelmi leckék</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2019-01-10-antarktiszi-z%C3%B6lds%C3%A9gek/">Antarktiszi zöldségek</a>
+              </li>
+            
+          
+        </ul>
+      </section>
+    
+  
+  
+  
+
+  
+    
+      <section class="odd">
+        
+          <h1>Mi van még itt?</h1>
+        
+        
+          <li>
+            <a href="https://hzblog.github.io/archives/" title="Minden gondolat" >Minden gondolat</a>
+          </li>
+        
+      </section>
+    
+  
+</aside>
+
+  </div>
+</div>
+
+<footer role="contentinfo">
+  <p>Copyright &copy; 2019 hz - <a href="https://hzblog.github.io/license/">License</a> -
+  <span class="credit">Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> and <a target="_blank" href="https://github.com/parsiya/hugo-octopress/">Hugo-Octopress</a> theme.
+</p>
+
+</footer>
+
+
+
+
+
+
+</body>
+</html>
+
