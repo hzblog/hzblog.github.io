@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on hzblog</title>
@@ -38,7 +38,7 @@
       
       <guid>https://hzblog.github.io/blog/2019-01-16-etf-korrel%C3%A1ci%C3%B3k/</guid>
       <description>ETF-ek diverzifikálásánál általában először azt nézem meg, hogy az általam érdekesnek tartott időtávon milyen az egyes ETF-ek közötti korreláció. Ebben nyújthat segítséget a Portfolio Visualizer. Az alábbi R kóddal kiszíneztem néhány népszerű ETF éves hozamának korrelációs mátrixát: (a vizsgált időszak a 2005-2018 között eltelt 14 év, amiben a 2008-as pénzügyi válság is benne van):
-library(corrplot) # Source: https://www.portfoliovisualizer.com/asset-correlations  # Tickers: SPY FEZ EWJ EEM TLT IEF SHY TIP GLD m=matrix(c(1,0.</description>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22  library(corrplot)# Source: https://www.</description>
     </item>
     
     <item>
@@ -166,7 +166,7 @@ A tudományos félrevezetés 9 csapdája:</description>
       
       <guid>https://hzblog.github.io/blog/2018-05-05-milyen-%C3%A1llampap%C3%ADrt-vegyek/</guid>
       <description>Miután elzarándokoltunk az Államkincstár legközelebbi ügyfélszolgálatára, hogy:
- megnyissuk az értékpapír számlánkat, Webkincstár hozzáférést igényeljünk, és megnyissuk az aktuális évre a tartós befektetési számlánkat (TBSZ),  otthon a Webkincstárba belépve az Állampapír keresővel sokféle lehetőség közül választhatunk.
+ megnyissuk az értékpapír számlánkat,   Webkincstár hozzáférést igényeljünk, és megnyissuk az aktuális évre a tartós befektetési számlánkat (TBSZ),  otthon a Webkincstárba belépve az Állampapír keresővel sokféle lehetőség közül választhatunk.
 Azonban érdemes tudni, hogy egyes papírokat csak lakossági ügyfeleknek adnak el. Mivel az állam arra törekszik, hogy a magyar államadósság ne külföldi intézményi befektetők kezében, hanem inkább a magyar lakosság portfóliójában szerepeljen, az intézményi befektetők számára is elérhető diszkont kincstárjegyek (DKJ) és magyar államkötvények (MÁK) alacsony kamatához képest kiemelkedő kamatot biztosítanak az allampapir.</description>
     </item>
     
@@ -177,11 +177,10 @@ Azonban érdemes tudni, hogy egyes papírokat csak lakossági ügyfeleknek adnak
       
       <guid>https://hzblog.github.io/blog/2018-05-04-id%C5%91-portf%C3%B3li%C3%B3/</guid>
       <description>Sok minden már attól jobb lesz, ha elkezdjük mérni. Én több, mint egy éve rögzítem, hogy mire mennyi időt fordítok az aTimeLogger app segítségével. Most csináltam egy statisztikát 2018 első négy hónapjáról, hogy átlagosan mivel töltöm az időmet:
- Alvás: napi 7 óra 11 perc
- Család: napi 7 óra 34 perc
- ebből közös családi időtöltés napi 5 óra
- ebből csak a feleségemmel napi 44 perc
- ebből csak a lányommal napi 1 óra 9 perc</description>
+  Alvás: napi 7 óra 11 perc
+  Család: napi 7 óra 34 perc
+  ebből közös családi időtöltés napi 5 óra
+  ebből csak a feleségemmel napi 44 perc</description>
     </item>
     
     <item>

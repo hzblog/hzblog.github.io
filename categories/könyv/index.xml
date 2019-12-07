@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Könyv on hzblog</title>
+    <title>könyv on hzblog</title>
     <link>https://hzblog.github.io/categories/k%C3%B6nyv/</link>
-    <description>Recent content in Könyv on hzblog</description>
+    <description>Recent content in könyv on hzblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>hu-HU</language>
     <lastBuildDate>Sat, 12 Jan 2019 08:00:00 +0100</lastBuildDate>

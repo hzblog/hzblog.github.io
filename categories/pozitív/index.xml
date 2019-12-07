@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pozitív on hzblog</title>
+    <title>pozitív on hzblog</title>
     <link>https://hzblog.github.io/categories/pozit%C3%ADv/</link>
-    <description>Recent content in Pozitív on hzblog</description>
+    <description>Recent content in pozitív on hzblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>hu-HU</language>
     <lastBuildDate>Thu, 10 Jan 2019 08:00:00 +0200</lastBuildDate>

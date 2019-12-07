@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gyerek on hzblog</title>
+    <title>gyerek on hzblog</title>
     <link>https://hzblog.github.io/categories/gyerek/</link>
-    <description>Recent content in Gyerek on hzblog</description>
+    <description>Recent content in gyerek on hzblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>hu-HU</language>
     <lastBuildDate>Tue, 11 Jun 2019 08:00:00 +0100</lastBuildDate>

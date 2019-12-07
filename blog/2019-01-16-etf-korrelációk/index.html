@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
   
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
 
-  
   
     
     
@@ -36,26 +32,25 @@
 
   
   
-  
 
-  
-
-  <meta name="description" content="">
+  <meta name="description" content="" />
   <meta name="keywords" content="">
-
   <meta name="author" content="hz">
 
   
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   
 
+  
+  
 </head>
 <body>
 
 
-<header role="banner"><hgroup>
+<header role="banner">
+<hgroup>
   
   <h1><a href="https://hzblog.github.io/">hzblog</a></h1>
     <h2>gondolatok minden lény javára</h2>
@@ -72,7 +67,6 @@
       
         <option value="https://hzblog.github.io/archives/">» Archívum</option>
       
-
   </select>
 </fieldset>
 
@@ -90,14 +84,12 @@
   
 </ul>
 
-
 <ul class="subscription">
   
     
         <a href="https://hzblog.github.io/index.xml" target="_blank" type="application/rss+xml" title="RSS"><i class="fa fa-rss-square fa-lg"></i></a>
     
   
-
 </ul>
 
 
@@ -114,18 +106,17 @@
 
 <header>
     <p class="meta">2019. január 16.
-         - 2 perc olvasnivaló 
+         - 3 perc olvasnivaló 
          - <a href="https://hzblog.github.io/blog/2019-01-16-etf-korrel%C3%A1ci%C3%B3k/#disqus_thread">Comments</a>
 
-        
-        
-        
-            - <a class="label" href="https://hzblog.github.io/categories/p%c3%a9nz/">pénz </a>
-        
-    </p>
-    <h1 class="entry-title">
-         ETF korrelációk 
-    </h1>
+    
+    
+      - <a class="label" href="https://hzblog.github.io/categories/p%c3%a9nz/">pénz </a>
+    
+  </p>
+  <h1 class="entry-title">
+    <a href="https://hzblog.github.io/blog/2019-01-16-etf-korrel%C3%A1ci%C3%B3k/">ETF korrelációk</a>
+  </h1>
 </header>
 
 
@@ -133,38 +124,61 @@
           
           
           
-          
-          <p>ETF-ek diverzifikálásánál általában először azt nézem meg, hogy az általam érdekesnek tartott időtávon milyen az egyes ETF-ek közötti korreláció. Ebben nyújthat segítséget a <a href="https://www.portfoliovisualizer.com/asset-correlations" target="_blank">Portfolio Visualizer</a>. Az alábbi R kóddal kiszíneztem néhány népszerű ETF éves hozamának korrelációs mátrixát: (a vizsgált időszak a 2005-2018 között eltelt 14 év, amiben a 2008-as pénzügyi válság is benne van):</p>
-<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="kn">library</span><span class="p">(</span>corrplot<span class="p">)</span>
+          <p>ETF-ek diverzifikálásánál általában először azt nézem meg, hogy az általam érdekesnek tartott időtávon milyen az egyes ETF-ek közötti korreláció. Ebben nyújthat segítséget a <a href="https://www.portfoliovisualizer.com/asset-correlations">Portfolio Visualizer</a>. Az alábbi R kóddal kiszíneztem néhány népszerű ETF éves hozamának korrelációs mátrixát: (a vizsgált időszak a 2005-2018 között eltelt 14 év, amiben a 2008-as pénzügyi válság is benne van):</p>
+<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">library<span style="color:#f92672">(</span>corrplot<span style="color:#f92672">)</span>
 
-<span class="c1"># Source: https://www.portfoliovisualizer.com/asset-correlations </span>
-<span class="c1">#         Tickers: SPY FEZ EWJ EEM TLT IEF SHY TIP GLD</span>
+<span style="color:#75715e"># Source: https://www.portfoliovisualizer.com/asset-correlations</span>
+<span style="color:#75715e">#         Tickers: SPY FEZ EWJ EEM TLT IEF SHY TIP GLD</span>
 
-m<span class="o">=</span><span class="kt">matrix</span><span class="p">(</span><span class="kt">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">0.82</span><span class="p">,</span><span class="m">0.73</span><span class="p">,</span><span class="m">0.69</span><span class="p">,</span><span class="m">-0.63</span><span class="p">,</span><span class="m">-0.7</span><span class="p">,</span><span class="m">-0.6</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">-0.01</span><span class="p">,</span>
-           <span class="m">0.82</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.7</span><span class="p">,</span><span class="m">0.81</span><span class="p">,</span><span class="m">-0.67</span><span class="p">,</span><span class="m">-0.67</span><span class="p">,</span><span class="m">-0.25</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0.17</span><span class="p">,</span>
-           <span class="m">0.73</span><span class="p">,</span><span class="m">0.7</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.55</span><span class="p">,</span><span class="m">-0.55</span><span class="p">,</span><span class="m">-0.63</span><span class="p">,</span><span class="m">-0.51</span><span class="p">,</span><span class="m">-0.3</span><span class="p">,</span><span class="m">-0.07</span><span class="p">,</span>
-           <span class="m">0.69</span><span class="p">,</span><span class="m">0.81</span><span class="p">,</span><span class="m">0.55</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">-0.57</span><span class="p">,</span><span class="m">-0.53</span><span class="p">,</span><span class="m">-0.17</span><span class="p">,</span><span class="m">0.35</span><span class="p">,</span><span class="m">0.59</span><span class="p">,</span>
-           <span class="m">-0.63</span><span class="p">,</span><span class="m">-0.67</span><span class="p">,</span><span class="m">-0.55</span><span class="p">,</span><span class="m">-0.57</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.94</span><span class="p">,</span><span class="m">0.4</span><span class="p">,</span><span class="m">0.31</span><span class="p">,</span><span class="m">0.1</span><span class="p">,</span>
-           <span class="m">-0.7</span><span class="p">,</span><span class="m">-0.67</span><span class="p">,</span><span class="m">-0.63</span><span class="p">,</span><span class="m">-0.53</span><span class="p">,</span><span class="m">0.94</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.6</span><span class="p">,</span><span class="m">0.43</span><span class="p">,</span><span class="m">0.27</span><span class="p">,</span>
-           <span class="m">-0.6</span><span class="p">,</span><span class="m">-0.25</span><span class="p">,</span><span class="m">-0.51</span><span class="p">,</span><span class="m">-0.17</span><span class="p">,</span><span class="m">0.4</span><span class="p">,</span><span class="m">0.6</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.21</span><span class="p">,</span><span class="m">0.44</span><span class="p">,</span>
-           <span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">-0.3</span><span class="p">,</span><span class="m">0.35</span><span class="p">,</span><span class="m">0.31</span><span class="p">,</span><span class="m">0.43</span><span class="p">,</span><span class="m">0.21</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0.72</span><span class="p">,</span>
-           <span class="m">-0.01</span><span class="p">,</span><span class="m">0.17</span><span class="p">,</span><span class="m">-0.07</span><span class="p">,</span><span class="m">0.59</span><span class="p">,</span><span class="m">0.1</span><span class="p">,</span><span class="m">0.27</span><span class="p">,</span><span class="m">0.44</span><span class="p">,</span><span class="m">0.72</span><span class="p">,</span><span class="m">1</span><span class="p">),</span>
-         nrow<span class="o">=</span><span class="m">9</span><span class="p">,</span>ncol<span class="o">=</span><span class="m">9</span><span class="p">)</span>
-<span class="kp">rownames</span><span class="p">(</span>m<span class="p">)</span> <span class="o">&lt;-</span> <span class="kt">c</span><span class="p">(</span><span class="s">&#39;SPY&#39;</span><span class="p">,</span><span class="s">&#39;FEZ&#39;</span><span class="p">,</span><span class="s">&#39;EWJ&#39;</span><span class="p">,</span><span class="s">&#39;EEM&#39;</span><span class="p">,</span><span class="s">&#39;TLT&#39;</span><span class="p">,</span><span class="s">&#39;IEF&#39;</span><span class="p">,</span><span class="s">&#39;SHY&#39;</span><span class="p">,</span><span class="s">&#39;TIP&#39;</span><span class="p">,</span><span class="s">&#39;GLD&#39;</span><span class="p">)</span>
-<span class="kp">colnames</span><span class="p">(</span>m<span class="p">)</span> <span class="o">&lt;-</span> <span class="kp">rownames</span><span class="p">(</span>m<span class="p">)</span>
+<span style="color:#111">m</span><span style="color:#f92672">=</span>matrix<span style="color:#f92672">(</span>c<span style="color:#f92672">(</span>1,0.82,0.73,0.69,-0.63,-0.7,-0.6,0,-0.01,
+           0.82,1,0.7,0.81,-0.67,-0.67,-0.25,0,0.17,
+           0.73,0.7,1,0.55,-0.55,-0.63,-0.51,-0.3,-0.07,
+           0.69,0.81,0.55,1,-0.57,-0.53,-0.17,0.35,0.59,
+           -0.63,-0.67,-0.55,-0.57,1,0.94,0.4,0.31,0.1,
+           -0.7,-0.67,-0.63,-0.53,0.94,1,0.6,0.43,0.27,
+           -0.6,-0.25,-0.51,-0.17,0.4,0.6,1,0.21,0.44,
+           0,0,-0.3,0.35,0.31,0.43,0.21,1,0.72,
+           -0.01,0.17,-0.07,0.59,0.1,0.27,0.44,0.72,1<span style="color:#f92672">)</span>,
+         <span style="color:#111">nrow</span><span style="color:#f92672">=</span>9,ncol<span style="color:#f92672">=</span>9<span style="color:#f92672">)</span>
+rownames<span style="color:#f92672">(</span>m<span style="color:#f92672">)</span> &lt;- c<span style="color:#f92672">(</span><span style="color:#d88200">&#39;SPY&#39;</span>,<span style="color:#d88200">&#39;FEZ&#39;</span>,<span style="color:#d88200">&#39;EWJ&#39;</span>,<span style="color:#d88200">&#39;EEM&#39;</span>,<span style="color:#d88200">&#39;TLT&#39;</span>,<span style="color:#d88200">&#39;IEF&#39;</span>,<span style="color:#d88200">&#39;SHY&#39;</span>,<span style="color:#d88200">&#39;TIP&#39;</span>,<span style="color:#d88200">&#39;GLD&#39;</span><span style="color:#f92672">)</span>
+colnames<span style="color:#f92672">(</span>m<span style="color:#f92672">)</span> &lt;- rownames<span style="color:#f92672">(</span>m<span style="color:#f92672">)</span>
 
-cols <span class="o">&lt;-</span> <span class="kt">c</span><span class="p">(</span><span class="s">&#39;#a50026&#39;</span><span class="p">,</span><span class="s">&#39;#d73027&#39;</span><span class="p">,</span><span class="s">&#39;#f46d43&#39;</span><span class="p">,</span><span class="s">&#39;#fdae61&#39;</span><span class="p">,</span><span class="s">&#39;#fee090&#39;</span><span class="p">,</span>
-          <span class="s">&#39;#e0f3f8&#39;</span><span class="p">,</span><span class="s">&#39;#abd9e9&#39;</span><span class="p">,</span><span class="s">&#39;#74add1&#39;</span><span class="p">,</span><span class="s">&#39;#4575b4&#39;</span><span class="p">,</span><span class="s">&#39;#313695&#39;</span><span class="p">)</span>
+cols &lt;- c<span style="color:#f92672">(</span><span style="color:#d88200">&#39;#a50026&#39;</span>,<span style="color:#d88200">&#39;#d73027&#39;</span>,<span style="color:#d88200">&#39;#f46d43&#39;</span>,<span style="color:#d88200">&#39;#fdae61&#39;</span>,<span style="color:#d88200">&#39;#fee090&#39;</span>,
+          <span style="color:#d88200">&#39;#e0f3f8&#39;</span>,<span style="color:#d88200">&#39;#abd9e9&#39;</span>,<span style="color:#d88200">&#39;#74add1&#39;</span>,<span style="color:#d88200">&#39;#4575b4&#39;</span>,<span style="color:#d88200">&#39;#313695&#39;</span><span style="color:#f92672">)</span>
 
-corrplot<span class="p">(</span>m<span class="p">,</span> method<span class="o">=</span><span class="s">&#39;color&#39;</span><span class="p">,</span> col<span class="o">=</span>cols<span class="p">,</span> addCoef.col <span class="o">=</span> <span class="s">&#39;white&#39;</span><span class="p">,</span> tl.col<span class="o">=</span><span class="s">&#39;black&#39;</span><span class="p">,</span> outline<span class="o">=</span><span class="bp">T</span><span class="p">)</span></code></pre></div>
-<p>Az eredmény így néz ki:</p>
-
-<p><img src="/img/2019_01_etfcorr.png" alt="ETF korrelációs mátrix" /></p>
-
+corrplot<span style="color:#f92672">(</span>m, <span style="color:#111">method</span><span style="color:#f92672">=</span><span style="color:#d88200">&#39;color&#39;</span>, <span style="color:#111">col</span><span style="color:#f92672">=</span>cols, addCoef.col <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;white&#39;</span>, tl.col<span style="color:#f92672">=</span><span style="color:#d88200">&#39;black&#39;</span>, <span style="color:#111">outline</span><span style="color:#f92672">=</span>T<span style="color:#f92672">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Az eredmény így néz ki:</p>
+<p><img src="/img/2019_01_etfcorr.png" alt="ETF korrelációs mátrix"></p>
 <p>Ahol a korreláció közel van +1-hez, ott nincs sok értelme a diverzifikációnak, mert a két ETF vagy egyszere szárnyal vagy egyszerre zuhan. Erre példa a TLT-IEF kombináció. Ha a korreláció -1-hez van közel, akkor azt lehet mondani, hogy amikor az egyik ETF szárnyal, akkor a másik zuhan, erre példa a SPY-TLT kombináció. (Nem véletlenül találták ki a részvény+kötvény portfoliókat.) A korreláció 0 körüli értéke azt mutatja, hogy két ETF egymástól függetlenül viselkedik, ilyen például az SPY-TIP.</p>
-
 <p>Mik is ezek a betűk?</p>
-
 <ul>
 <li>SPY: amerikai részvények (konkrétan az 500 legnagyobb tőzsdei vállalat az USA-ban)</li>
 <li>FEZ: európai részvények (az 50 legnagyobb tőzsdei vállalat az EU-ba)</li>
@@ -176,19 +190,14 @@ corrplot<span class="p">(</span>m<span class="p">,</span> method<span class="o">
 <li>TIP: az amerikai inflációt követő (változó kamatozású) államkötvények (TIPS)</li>
 <li>GLD: arany</li>
 </ul>
-
 <p>Három csoportot lehet azonosítani a korrelációs mátrixon:</p>
-
 <ol>
 <li>A részvény ETF-ek között erős a korreláció, ez az első csoport: SPY-FEZ-EWJ-EEM.</li>
 <li>A fix kötvények között szintén erős a korrláció, ez a 2. csoport: TLT-IEF-SHY.</li>
 <li>A harmadik csoportba az infláció követők kerültek: a TIPS-arany korreláció 0.72.</li>
 </ol>
-
 <p>Ez azért fontos, mert a vizsgált 14 évben láthatóan elsősorban az számított, hogy a portfolióban mennyi részvény, mennyi kötvény és mennyi infláció követő eszköz volt. Hogy konkrétan melyik ország részvényei vagy milyen lejárati idejű kötvények, az másodlagos volt. Hasonlóan az is másodlagos volt, hogy az infláció követését erre kialakított TIPS kötvényekkel vagy arany befektetéssel valósították meg.</p>
-
 <p>Nyilván nem teljesen mindegy, mert pl. a részvények közül az utóbbi években az amerikai piac látványosan felülteljesített a többi piachoz képest, míg korábban voltak időszakok, amikor a fejlődő országok vagy éppen Japán volt a favorit. De ez már inkább az időzítés témaköre, amit szerintem halandó ember úgysem tud kellő bizonyossággal eltalálni.</p>
-
 <p>Talán hasznosabb azt átgondolni, hogy a látott korrelációk vajon mennyit változhatnak a jövőben.</p>
 
         </div>
@@ -202,9 +211,6 @@ corrplot<span class="p">(</span>m<span class="p">,</span> method<span class="o">
     
     </span>
   </p>
-
-  
-  
 
   
 
@@ -221,19 +227,18 @@ corrplot<span class="p">(</span>m<span class="p">,</span> method<span class="o">
     
       <div id="disqus_thread"></div>
 <script type="text/javascript">
+  (function() {
+      
+      
+      
+      if (window.location.hostname == "localhost")
+          return;
 
-(function() {
-    
-    
-    
-    if (window.location.hostname == "localhost")
-        return;
-
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'hzblog';
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'hzblog';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
@@ -286,6 +291,8 @@ corrplot<span class="p">(</span>m<span class="p">,</span> method<span class="o">
   </ul>
 
   
+
+  
   
   
     
@@ -298,6 +305,8 @@ corrplot<span class="p">(</span>m<span class="p">,</span> method<span class="o">
               <li class="post">
                 <a href="/blog/2019-06-11-minimalizmus-a-gyereknevel%C3%A9sben/">Minimalizmus a gyereknevelésben</a>
               </li>
+            
+          
             
           
             
@@ -328,8 +337,6 @@ corrplot<span class="p">(</span>m<span class="p">,</span> method<span class="o">
       </section>
     
   
-  
-  
 
   
     
@@ -345,23 +352,23 @@ corrplot<span class="p">(</span>m<span class="p">,</span> method<span class="o">
       </section>
     
   
+
 </aside>
 
   </div>
 </div>
 
-<footer role="contentinfo">
-  <p>Copyright &copy; 2019 hz - <a href="https://hzblog.github.io/license/">License</a> -
-  <span class="credit">Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> and <a target="_blank" href="https://github.com/parsiya/hugo-octopress/">Hugo-Octopress</a> theme.
-</p>
+    <footer role="contentinfo">
+      <p>Copyright &copy; 2019 hz - <a href="https://hzblog.github.io/license/">License</a> -
+        <span class="credit">Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> and <a target="_blank" href="https://github.com/parsiya/hugo-octopress/">Hugo-Octopress</a> theme.
+      </p>
+    </footer>
 
-</footer>
+    
+    
+    
 
-
-
-
-
-
-</body>
+    
+  </body>
 </html>
 
