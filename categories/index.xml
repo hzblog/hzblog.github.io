@@ -6,33 +6,42 @@
     <description>Recent content in Categories on hzblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>hu-HU</language>
-    <lastBuildDate>Sat, 07 Dec 2019 08:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 12 Dec 2019 08:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://hzblog.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>tudatos</title>
-      <link>https://hzblog.github.io/categories/tudatos/</link>
-      <pubDate>Sat, 07 Dec 2019 08:00:00 +0100</pubDate>
+      <title>pozitív</title>
+      <link>https://hzblog.github.io/categories/pozit%C3%ADv/</link>
+      <pubDate>Thu, 12 Dec 2019 08:00:00 +0100</pubDate>
       
-      <guid>https://hzblog.github.io/categories/tudatos/</guid>
+      <guid>https://hzblog.github.io/categories/pozit%C3%ADv/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gyerek</title>
       <link>https://hzblog.github.io/categories/gyerek/</link>
-      <pubDate>Tue, 11 Jun 2019 08:00:00 +0100</pubDate>
+      <pubDate>Tue, 10 Dec 2019 08:00:00 +0100</pubDate>
       
       <guid>https://hzblog.github.io/categories/gyerek/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>tudatos</title>
+      <link>https://hzblog.github.io/categories/tudatos/</link>
+      <pubDate>Mon, 09 Dec 2019 08:00:00 +0100</pubDate>
+      
+      <guid>https://hzblog.github.io/categories/tudatos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>pénz</title>
       <link>https://hzblog.github.io/categories/p%C3%A9nz/</link>
-      <pubDate>Mon, 04 Feb 2019 08:00:00 +0100</pubDate>
+      <pubDate>Sun, 08 Dec 2019 08:00:00 +0100</pubDate>
       
       <guid>https://hzblog.github.io/categories/p%C3%A9nz/</guid>
       <description></description>
@@ -53,15 +62,6 @@
       <pubDate>Sat, 12 Jan 2019 08:00:00 +0100</pubDate>
       
       <guid>https://hzblog.github.io/categories/k%C3%B6nyv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pozitív</title>
-      <link>https://hzblog.github.io/categories/pozit%C3%ADv/</link>
-      <pubDate>Thu, 10 Jan 2019 08:00:00 +0200</pubDate>
-      
-      <guid>https://hzblog.github.io/categories/pozit%C3%ADv/</guid>
       <description></description>
     </item>
     

@@ -110,6 +110,197 @@
         
 
 <header>
+    <p class="meta">2019. február 4.
+         - 1 perc olvasnivaló 
+         - <a href="https://hzblog.github.io/blog/2019-02-04-kock%C3%A1zatok/#disqus_thread">Comments</a>
+
+    
+    
+      - <a class="label" href="https://hzblog.github.io/categories/p%c3%a9nz/">pénz </a>
+    
+  </p>
+  <h1 class="entry-title">
+    <a href="https://hzblog.github.io/blog/2019-02-04-kock%C3%A1zatok/">Kockázatok</a>
+  </h1>
+</header>
+
+        
+          <p>Csődvédelmet kért a QuadrigaCX nevű kanadai online tőzsde, miután kb. 190 millió dollárnyi kriptovaluta ragadt benn a széfjükben, tavaly decemberben ugyanis váratlanul meghalt Indiában a cég 30 éves alapítója, Gerald Cotten, az egyetlen ember, aki tudta a jelszót a QuadrigaCX trezorjához, amiben az ügyfelek pénzét tartották.</p>
+<p><a href="https://444.hu/2019/02/04/190-millio-dollarral-tartozik-ugyfeleinek-a-netes-tozsde-mert-meghalt-az-egyetlen-ember-aki-tudta-a-jelszot-a-trezorhoz">444</a>
+<a href="https://gizmodo.com/crypto-exchange-says-it-cant-repay-190-million-to-clie-1832309454">Gizmodo</a></p>
+<ul>
+<li>A jó hír: az ügyfelek pénze tényleg biztonságban volt.</li>
+<li>A rossz hír: ebben a helyzetben sose fogják visszakapni.</li>
+<li>Mellesleg: 30 évesen is meghalhatnak emberek.</li>
+</ul>
+
+        
+      </article>
+      
+      <article>
+        
+        
+
+<header>
+    <p class="meta">2019. január 16.
+         - 3 perc olvasnivaló 
+         - <a href="https://hzblog.github.io/blog/2019-01-16-etf-korrel%C3%A1ci%C3%B3k/#disqus_thread">Comments</a>
+
+    
+    
+      - <a class="label" href="https://hzblog.github.io/categories/p%c3%a9nz/">pénz </a>
+    
+  </p>
+  <h1 class="entry-title">
+    <a href="https://hzblog.github.io/blog/2019-01-16-etf-korrel%C3%A1ci%C3%B3k/">ETF korrelációk</a>
+  </h1>
+</header>
+
+        
+          <p>ETF-ek diverzifikálásánál általában először azt nézem meg, hogy az általam érdekesnek tartott időtávon milyen az egyes ETF-ek közötti korreláció. Ebben nyújthat segítséget a <a href="https://www.portfoliovisualizer.com/asset-correlations">Portfolio Visualizer</a>. Az alábbi R kóddal kiszíneztem néhány népszerű ETF éves hozamának korrelációs mátrixát: (a vizsgált időszak a 2005-2018 között eltelt 14 év, amiben a 2008-as pénzügyi válság is benne van):</p>
+<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">library<span style="color:#f92672">(</span>corrplot<span style="color:#f92672">)</span>
+
+<span style="color:#75715e"># Source: https://www.portfoliovisualizer.com/asset-correlations</span>
+<span style="color:#75715e">#         Tickers: SPY FEZ EWJ EEM TLT IEF SHY TIP GLD</span>
+
+<span style="color:#111">m</span><span style="color:#f92672">=</span>matrix<span style="color:#f92672">(</span>c<span style="color:#f92672">(</span>1,0.82,0.73,0.69,-0.63,-0.7,-0.6,0,-0.01,
+           0.82,1,0.7,0.81,-0.67,-0.67,-0.25,0,0.17,
+           0.73,0.7,1,0.55,-0.55,-0.63,-0.51,-0.3,-0.07,
+           0.69,0.81,0.55,1,-0.57,-0.53,-0.17,0.35,0.59,
+           -0.63,-0.67,-0.55,-0.57,1,0.94,0.4,0.31,0.1,
+           -0.7,-0.67,-0.63,-0.53,0.94,1,0.6,0.43,0.27,
+           -0.6,-0.25,-0.51,-0.17,0.4,0.6,1,0.21,0.44,
+           0,0,-0.3,0.35,0.31,0.43,0.21,1,0.72,
+           -0.01,0.17,-0.07,0.59,0.1,0.27,0.44,0.72,1<span style="color:#f92672">)</span>,
+         <span style="color:#111">nrow</span><span style="color:#f92672">=</span>9,ncol<span style="color:#f92672">=</span>9<span style="color:#f92672">)</span>
+rownames<span style="color:#f92672">(</span>m<span style="color:#f92672">)</span> &lt;- c<span style="color:#f92672">(</span><span style="color:#d88200">&#39;SPY&#39;</span>,<span style="color:#d88200">&#39;FEZ&#39;</span>,<span style="color:#d88200">&#39;EWJ&#39;</span>,<span style="color:#d88200">&#39;EEM&#39;</span>,<span style="color:#d88200">&#39;TLT&#39;</span>,<span style="color:#d88200">&#39;IEF&#39;</span>,<span style="color:#d88200">&#39;SHY&#39;</span>,<span style="color:#d88200">&#39;TIP&#39;</span>,<span style="color:#d88200">&#39;GLD&#39;</span><span style="color:#f92672">)</span>
+colnames<span style="color:#f92672">(</span>m<span style="color:#f92672">)</span> &lt;- rownames<span style="color:#f92672">(</span>m<span style="color:#f92672">)</span>
+
+cols &lt;- c<span style="color:#f92672">(</span><span style="color:#d88200">&#39;#a50026&#39;</span>,<span style="color:#d88200">&#39;#d73027&#39;</span>,<span style="color:#d88200">&#39;#f46d43&#39;</span>,<span style="color:#d88200">&#39;#fdae61&#39;</span>,<span style="color:#d88200">&#39;#fee090&#39;</span>,
+          <span style="color:#d88200">&#39;#e0f3f8&#39;</span>,<span style="color:#d88200">&#39;#abd9e9&#39;</span>,<span style="color:#d88200">&#39;#74add1&#39;</span>,<span style="color:#d88200">&#39;#4575b4&#39;</span>,<span style="color:#d88200">&#39;#313695&#39;</span><span style="color:#f92672">)</span>
+
+corrplot<span style="color:#f92672">(</span>m, <span style="color:#111">method</span><span style="color:#f92672">=</span><span style="color:#d88200">&#39;color&#39;</span>, <span style="color:#111">col</span><span style="color:#f92672">=</span>cols, addCoef.col <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;white&#39;</span>, tl.col<span style="color:#f92672">=</span><span style="color:#d88200">&#39;black&#39;</span>, <span style="color:#111">outline</span><span style="color:#f92672">=</span>T<span style="color:#f92672">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Az eredmény így néz ki:</p>
+<p><img src="/img/2019_01_etfcorr.png" alt="ETF korrelációs mátrix"></p>
+<p>Ahol a korreláció közel van +1-hez, ott nincs sok értelme a diverzifikációnak, mert a két ETF vagy egyszere szárnyal vagy egyszerre zuhan. Erre példa a TLT-IEF kombináció. Ha a korreláció -1-hez van közel, akkor azt lehet mondani, hogy amikor az egyik ETF szárnyal, akkor a másik zuhan, erre példa a SPY-TLT kombináció. (Nem véletlenül találták ki a részvény+kötvény portfoliókat.) A korreláció 0 körüli értéke azt mutatja, hogy két ETF egymástól függetlenül viselkedik, ilyen például az SPY-TIP.</p>
+<p>Mik is ezek a betűk?</p>
+<ul>
+<li>SPY: amerikai részvények (konkrétan az 500 legnagyobb tőzsdei vállalat az USA-ban)</li>
+<li>FEZ: európai részvények (az 50 legnagyobb tőzsdei vállalat az EU-ba)</li>
+<li>EWJ: japán részvények (MSCI Japan indexben szereplő 322 vállalat)</li>
+<li>EEM: fejlődő országok részvényei (Kína, Dél-Korea, India, Brazília, Dél-Afrika, Oroszország, stb.)</li>
+<li>TLT: hosszú lejáratú (fix kamatozású) amerikai államkötvények (20+ év)</li>
+<li>IEF: közepes lejáratú (fix kamatozású) amerikai államkötvények (7-10 év)</li>
+<li>SHY: rövid lejáratú (fix kamatozású) amerikai államkötvények (1-3 év)</li>
+<li>TIP: az amerikai inflációt követő (változó kamatozású) államkötvények (TIPS)</li>
+<li>GLD: arany</li>
+</ul>
+<p>Három csoportot lehet azonosítani a korrelációs mátrixon:</p>
+<ol>
+<li>A részvény ETF-ek között erős a korreláció, ez az első csoport: SPY-FEZ-EWJ-EEM.</li>
+<li>A fix kötvények között szintén erős a korrláció, ez a 2. csoport: TLT-IEF-SHY.</li>
+<li>A harmadik csoportba az infláció követők kerültek: a TIPS-arany korreláció 0.72.</li>
+</ol>
+<p>Ez azért fontos, mert a vizsgált 14 évben láthatóan elsősorban az számított, hogy a portfolióban mennyi részvény, mennyi kötvény és mennyi infláció követő eszköz volt. Hogy konkrétan melyik ország részvényei vagy milyen lejárati idejű kötvények, az másodlagos volt. Hasonlóan az is másodlagos volt, hogy az infláció követését erre kialakított TIPS kötvényekkel vagy arany befektetéssel valósították meg.</p>
+<p>Nyilván nem teljesen mindegy, mert pl. a részvények közül az utóbbi években az amerikai piac látványosan felülteljesített a többi piachoz képest, míg korábban voltak időszakok, amikor a fejlődő országok vagy éppen Japán volt a favorit. De ez már inkább az időzítés témaköre, amit szerintem halandó ember úgysem tud kellő bizonyossággal eltalálni.</p>
+<p>Talán hasznosabb azt átgondolni, hogy a látott korrelációk vajon mennyit változhatnak a jövőben.</p>
+
+        
+      </article>
+      
+      <article>
+        
+        
+
+<header>
+    <p class="meta">2019. január 13.
+         - 1 perc olvasnivaló 
+         - <a href="https://hzblog.github.io/blog/2019-01-13-fedezd-fel-a-tested/#disqus_thread">Comments</a>
+
+    
+    
+      - <a class="label" href="https://hzblog.github.io/categories/j%c3%b3ga/">jóga </a>
+    
+  </p>
+  <h1 class="entry-title">
+    <a href="https://hzblog.github.io/blog/2019-01-13-fedezd-fel-a-tested/">Fedezd fel a tested</a>
+  </h1>
+</header>
+
+        
+          
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/VJrWyxLs7K0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p><a href="https://www.youtube.com/watch?v=VJrWyxLs7K0">Youtube</a></p>
+
+        
+      </article>
+      
+      <article>
+        
+        
+
+<header>
+    <p class="meta">2019. január 12.
+         - 1 perc olvasnivaló 
+         - <a href="https://hzblog.github.io/blog/2019-01-12-heti-egy-k%C3%B6nyv/#disqus_thread">Comments</a>
+
+    
+    
+      - <a class="label" href="https://hzblog.github.io/categories/k%c3%b6nyv/">könyv </a>
+    
+  </p>
+  <h1 class="entry-title">
+    <a href="https://hzblog.github.io/blog/2019-01-12-heti-egy-k%C3%B6nyv/">Heti egy könyv</a>
+  </h1>
+</header>
+
+        
+          
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ll2C2J6Q3SY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p><a href="https://www.youtube.com/watch?v=ll2C2J6Q3SY">Youtube</a></p>
+
+        
+      </article>
+      
+      <article>
+        
+        
+
+<header>
     <p class="meta">2019. január 11.
          - 6 perc olvasnivaló 
          - <a href="https://hzblog.github.io/blog/2019-01-11-t%C3%B6rt%C3%A9nelmi-leck%C3%A9k/#disqus_thread">Comments</a>
@@ -230,132 +421,6 @@
         
       </article>
       
-      <article>
-        
-        
-
-<header>
-    <p class="meta">2018. december 2.
-         - 1 perc olvasnivaló 
-         - <a href="https://hzblog.github.io/blog/2018-12-02-a-buddhizmus-la%C3%A1r-szerint/#disqus_thread">Comments</a>
-
-    
-    
-      - <a class="label" href="https://hzblog.github.io/categories/tudatos/">tudatos </a>
-    
-  </p>
-  <h1 class="entry-title">
-    <a href="https://hzblog.github.io/blog/2018-12-02-a-buddhizmus-la%C3%A1r-szerint/">A buddhizmus Laár szerint</a>
-  </h1>
-</header>
-
-        
-          <p>Ma megnéztem Laár András videóját, amiben bevezetést ad a buddhizmusba. Szórakoztató volt.</p>
-<p>Pár fontos gondolatot kiemelek belőle:</p>
-<ul>
-<li>a buddhizmusnál jobb téma nagyon nehezen található</li>
-<li>a külső körülmények szintjétől nem leszünk boldogabbak</li>
-<li>az összes problémánk oka a téveszmékből (=nemtudásból) ered</li>
-<li>a tudatunk az egyetlen valóság, ami nem hagy el minket</li>
-<li>a létezés valósága kérdéses (ami elmúlt már nincs, ami csak jön az még nincs)</li>
-<li>a létezés olyan értelemben nem valóságos, hogy tőlünk (tapasztalástól) függetlenül nem valóságos</li>
-<li>&ldquo;<a href="https://youtu.be/Y_tgxNqsevE?t=5148">A buddhizmus úgy tartja, hogy a nők is meg tudnak világosodni.</a> Azért nehezebb a nőknek, mert jobban kötődnek a jelenségekhez. A természetnél fogva őrájuk van bízva, hogy legyen élet. Így a világ szempontjából a nők a teremtők. Minden ember anyától született. Mi férfiak soha nem fogunk tudni szülni, akárhány workshopra elmehetünk, a legkomolyabb beavatásokat megkaphatjuk, de a nők maguktól tudnak. Úgy nézzetek a nőkre, hogy ők a csodák. A közvetlen anyagi teremtő erővel bíró lény az a nő. Pont emiatt, ők egy kicsit kevésbé akarnak ebből a világból kilépni. Ő előbb akarja felnevelni a gyerekeit, mint hogy megvilágosodjon. Nem tud elmenni egy 8 éves elvonulásra néma csendben koplalva, mert addig megdöglik a gyerek&hellip;&rdquo;</li>
-</ul>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/Y_tgxNqsevE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<p><a href="https://www.youtube.com/watch?v=Y_tgxNqsevE">Youtube</a></p>
-
-        
-      </article>
-      
-      <article>
-        
-        
-
-<header>
-    <p class="meta">2018. november 30.
-         - 1 perc olvasnivaló 
-         - <a href="https://hzblog.github.io/blog/2018-11-30-nem-is-%C3%A9rdekel/#disqus_thread">Comments</a>
-
-    
-    
-      - <a class="label" href="https://hzblog.github.io/categories/tudatos/">tudatos </a>
-    
-  </p>
-  <h1 class="entry-title">
-    <a href="https://hzblog.github.io/blog/2018-11-30-nem-is-%C3%A9rdekel/">Nem is érdekel</a>
-  </h1>
-</header>
-
-        
-          <p>A teljes magyar felnőtt népesség 88%-a soha nem tájékozódik külföldi hírforrásokból.</p>
-<p>(Konkrétabban: 2% rendszeresen, 10% alkalmanként, 88% soha.)</p>
-<p><a href="http://mertek.eu/2018/11/26/a-politikai-tajekozodas-forrasai-magyarorszagon-trendek-2015-18/">Mérték</a>
-<a href="http://mertek.eu/wp-content/uploads/2018/11/A_politikai_tajekozodas_forrasai_Magyarorszagon_2018.pdf">PDF</a>
-<a href="https://index.hu/kultur/media/2018/11/27/a_politikai_tajekozodas_forrasai_magyarorszagon_2018/">Index</a></p>
-
-        
-      </article>
-      
-      <article>
-        
-        
-
-<header>
-    <p class="meta">2018. november 22.
-         - 1 perc olvasnivaló 
-         - <a href="https://hzblog.github.io/blog/2018-11-22-j%C3%B3-h%C3%ADrek/#disqus_thread">Comments</a>
-
-    
-    
-      - <a class="label" href="https://hzblog.github.io/categories/pozit%c3%adv/">pozitív </a>
-    
-  </p>
-  <h1 class="entry-title">
-    <a href="https://hzblog.github.io/blog/2018-11-22-j%C3%B3-h%C3%ADrek/">Jó hírek</a>
-  </h1>
-</header>
-
-        
-          <p>Nemcsak a <a href="https://futurecrun.ch/subscribe">Future Crunch hírlevele</a> mond jó híreket, néha a magyar sajtóban is megjelenik ez-az:</p>
-<ul>
-<li>A magyar kormány 2030-ban szeretne véget vetni a szénalapú energiatermelésnek. Ezzel Magyarország lehet az első közép-kelet-európai ország, amely meghatároz egy konkrét időpontot a szén kivezetésére. A lignitalapú áramtermelés egyébként hosszútávon már nem életképes gazdaságilag a kibocsátási kvóták (ETS) árának meredek emelkedése miatt. <a href="https://g7.hu/allam/20181122/magyarorszag-peldat-mutathat-kozep-europanak-ha-meszaros-lorinc-tenyleg-bezarja-az-eromuvet/">G7</a> <a href="https://www.portfolio.hu/vallalatok/varatlan-fordulat-magyarorszag-vezetheti-ki-kelet-europat-a-szenkorszakbol.1.305181.html">Portfolio</a></li>
-<li>A börzsönyi Csarna-völgy fokozottan védett részén semmilyen kisvasút építési beruházást nem támogat az agrárminisztérium, amely felügyeleti jogkörében eljárva utasította a terület vagyonkezelőjét, az Ipoly Erdő Zrt-t a beruházás engedélyeztetésére vonatkozó kérelem visszavonására. <a href="https://444.hu/2018/11/22/az-agrarminiszterium-visszavonta-a-csarna-volgybe-tervezett-kisvasut-engedelyet">444</a> <a href="https://index.hu/belfold/2018/11/22/nem_tamogatja_az_agrarminiszterium_a_csarna-volgyi_kisvasutat/">Index</a></li>
-</ul>
-
-        
-      </article>
-      
-      <article>
-        
-        
-
-<header>
-    <p class="meta">2018. október 13.
-         - 1 perc olvasnivaló 
-         - <a href="https://hzblog.github.io/blog/2018-10-13-a-h%C3%BAsev%C3%A9s-visszafog%C3%A1sa-mentheti-meg-a-f%C3%B6ldet/#disqus_thread">Comments</a>
-
-    
-    
-      - <a class="label" href="https://hzblog.github.io/categories/veg%c3%a1n/">vegán </a>
-    
-  </p>
-  <h1 class="entry-title">
-    <a href="https://hzblog.github.io/blog/2018-10-13-a-h%C3%BAsev%C3%A9s-visszafog%C3%A1sa-mentheti-meg-a-f%C3%B6ldet/">A húsevés visszafogása mentheti meg a Földet</a>
-  </h1>
-</header>
-
-        
-          <p>&ldquo;A Nature tudományos folyóiratban publikált tanulmány szerint a világ jelenlegi élelmezési rendszerének számos negatív hatása van: hozzájárul az éghajlatváltozáshoz, felemészti az ivóvízkészleteket, és szennyezi a környezetet a túlzott nitrogén- és foszforhasználattal. Mivel 2010 és 2050 között várhatóan nő a bolygó lakossága, e negatív hatások 50-90 százalékkal is nagyobbak lehetnek. A növényi eredetű ételekben gazdag, de húsban szegény étrendre való áttérés, az élelmiszerhulladék felére csökkentése, s a mezőgazdasági termelés fejlesztése a három kulcslépés, hogy az emberiség fenntartható jövőt építsen ki magának 2050-re.&rdquo; (A Haszon magazin napindító hírlevele 2018-10-12)</p>
-<p><a href="https://www.bbc.com/news/science-environment-45472966">BBC</a></p>
-<p><a href="https://www.nature.com/articles/s41893-018-0133-x">Nature Sustainability</a></p>
-
-        
-      </article>
-      
       
       
 
@@ -387,6 +452,8 @@
     
         <a href="/page/4/" class="label-pagination">4</a>
     
+        <a href="/page/5/" class="label-pagination">5</a>
+    
 
     
     
@@ -395,7 +462,7 @@
 
     
     
-        <a href="/page/4/" aria-label="Last"><i class="fa fa-angle-double-right fa-lg"></i></a>
+        <a href="/page/5/" aria-label="Last"><i class="fa fa-angle-double-right fa-lg"></i></a>
     
 
 </div>
@@ -455,11 +522,35 @@
           
           
             
+          
+            
               <li class="post">
-                <a href="/blog/2019-12-07-l%C3%A1thatatlan-kult%C3%BAra/">Láthatatlan kultúra</a>
+                <a href="/blog/2019-12-12-%C3%A9let-minden-m%C3%A9lys%C3%A9gben/">Élet minden mélységben</a>
               </li>
             
           
+            
+              <li class="post">
+                <a href="/blog/2019-12-10-pisa-felm%C3%A9r%C3%A9s/">PISA felmérés</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2019-12-09-a-sikerhez-vezet%C5%91-%C3%BAt/">A sikerhez vezető út</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2019-12-08-a-gazdas%C3%A1g-g%C3%A9pezete/">A gazdaság gépezete</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2019-12-07-l%C3%A1thatatlan-kult%C3%BAra/">Láthatatlan kultúra</a>
+              </li>
             
           
             
@@ -477,12 +568,6 @@
             
               <li class="post">
                 <a href="/blog/2019-01-16-etf-korrel%C3%A1ci%C3%B3k/">ETF korrelációk</a>
-              </li>
-            
-          
-            
-              <li class="post">
-                <a href="/blog/2019-01-13-fedezd-fel-a-tested/">Fedezd fel a tested</a>
               </li>
             
           
