@@ -6,10 +6,19 @@
     <description>Recent content in Categories on hzblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>hu-HU</language>
-    <lastBuildDate>Mon, 30 Dec 2019 08:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jan 2020 08:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://hzblog.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>jóga</title>
+      <link>https://hzblog.github.io/categories/j%C3%B3ga/</link>
+      <pubDate>Fri, 10 Jan 2020 08:00:00 +0100</pubDate>
+      
+      <guid>https://hzblog.github.io/categories/j%C3%B3ga/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>tudatos</title>
@@ -17,15 +26,6 @@
       <pubDate>Mon, 30 Dec 2019 08:00:00 +0100</pubDate>
       
       <guid>https://hzblog.github.io/categories/tudatos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jóga</title>
-      <link>https://hzblog.github.io/categories/j%C3%B3ga/</link>
-      <pubDate>Mon, 23 Dec 2019 08:00:00 +0100</pubDate>
-      
-      <guid>https://hzblog.github.io/categories/j%C3%B3ga/</guid>
       <description></description>
     </item>
     

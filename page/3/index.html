@@ -110,6 +110,105 @@
         
 
 <header>
+    <p class="meta">2019. január 16.
+         - 3 perc olvasnivaló 
+         - <a href="https://hzblog.github.io/blog/2019-01-16-etf-korrel%C3%A1ci%C3%B3k/#disqus_thread">Comments</a>
+
+    
+    
+      - <a class="label" href="https://hzblog.github.io/categories/p%c3%a9nz/">pénz </a>
+    
+  </p>
+  <h1 class="entry-title">
+    <a href="https://hzblog.github.io/blog/2019-01-16-etf-korrel%C3%A1ci%C3%B3k/">ETF korrelációk</a>
+  </h1>
+</header>
+
+        
+          <p>ETF-ek diverzifikálásánál általában először azt nézem meg, hogy az általam érdekesnek tartott időtávon milyen az egyes ETF-ek közötti korreláció. Ebben nyújthat segítséget a <a href="https://www.portfoliovisualizer.com/asset-correlations">Portfolio Visualizer</a>. Az alábbi R kóddal kiszíneztem néhány népszerű ETF éves hozamának korrelációs mátrixát: (a vizsgált időszak a 2005-2018 között eltelt 14 év, amiben a 2008-as pénzügyi válság is benne van):</p>
+<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">library<span style="color:#f92672">(</span>corrplot<span style="color:#f92672">)</span>
+
+<span style="color:#75715e"># Source: https://www.portfoliovisualizer.com/asset-correlations</span>
+<span style="color:#75715e">#         Tickers: SPY FEZ EWJ EEM TLT IEF SHY TIP GLD</span>
+
+<span style="color:#111">m</span><span style="color:#f92672">=</span>matrix<span style="color:#f92672">(</span>c<span style="color:#f92672">(</span>1,0.82,0.73,0.69,-0.63,-0.7,-0.6,0,-0.01,
+           0.82,1,0.7,0.81,-0.67,-0.67,-0.25,0,0.17,
+           0.73,0.7,1,0.55,-0.55,-0.63,-0.51,-0.3,-0.07,
+           0.69,0.81,0.55,1,-0.57,-0.53,-0.17,0.35,0.59,
+           -0.63,-0.67,-0.55,-0.57,1,0.94,0.4,0.31,0.1,
+           -0.7,-0.67,-0.63,-0.53,0.94,1,0.6,0.43,0.27,
+           -0.6,-0.25,-0.51,-0.17,0.4,0.6,1,0.21,0.44,
+           0,0,-0.3,0.35,0.31,0.43,0.21,1,0.72,
+           -0.01,0.17,-0.07,0.59,0.1,0.27,0.44,0.72,1<span style="color:#f92672">)</span>,
+         <span style="color:#111">nrow</span><span style="color:#f92672">=</span>9,ncol<span style="color:#f92672">=</span>9<span style="color:#f92672">)</span>
+rownames<span style="color:#f92672">(</span>m<span style="color:#f92672">)</span> &lt;- c<span style="color:#f92672">(</span><span style="color:#d88200">&#39;SPY&#39;</span>,<span style="color:#d88200">&#39;FEZ&#39;</span>,<span style="color:#d88200">&#39;EWJ&#39;</span>,<span style="color:#d88200">&#39;EEM&#39;</span>,<span style="color:#d88200">&#39;TLT&#39;</span>,<span style="color:#d88200">&#39;IEF&#39;</span>,<span style="color:#d88200">&#39;SHY&#39;</span>,<span style="color:#d88200">&#39;TIP&#39;</span>,<span style="color:#d88200">&#39;GLD&#39;</span><span style="color:#f92672">)</span>
+colnames<span style="color:#f92672">(</span>m<span style="color:#f92672">)</span> &lt;- rownames<span style="color:#f92672">(</span>m<span style="color:#f92672">)</span>
+
+cols &lt;- c<span style="color:#f92672">(</span><span style="color:#d88200">&#39;#a50026&#39;</span>,<span style="color:#d88200">&#39;#d73027&#39;</span>,<span style="color:#d88200">&#39;#f46d43&#39;</span>,<span style="color:#d88200">&#39;#fdae61&#39;</span>,<span style="color:#d88200">&#39;#fee090&#39;</span>,
+          <span style="color:#d88200">&#39;#e0f3f8&#39;</span>,<span style="color:#d88200">&#39;#abd9e9&#39;</span>,<span style="color:#d88200">&#39;#74add1&#39;</span>,<span style="color:#d88200">&#39;#4575b4&#39;</span>,<span style="color:#d88200">&#39;#313695&#39;</span><span style="color:#f92672">)</span>
+
+corrplot<span style="color:#f92672">(</span>m, <span style="color:#111">method</span><span style="color:#f92672">=</span><span style="color:#d88200">&#39;color&#39;</span>, <span style="color:#111">col</span><span style="color:#f92672">=</span>cols, addCoef.col <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;white&#39;</span>, tl.col<span style="color:#f92672">=</span><span style="color:#d88200">&#39;black&#39;</span>, <span style="color:#111">outline</span><span style="color:#f92672">=</span>T<span style="color:#f92672">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Az eredmény így néz ki:</p>
+<p><img src="/img/2019_01_etfcorr.png" alt="ETF korrelációs mátrix"></p>
+<p>Ahol a korreláció közel van +1-hez, ott nincs sok értelme a diverzifikációnak, mert a két ETF vagy egyszere szárnyal vagy egyszerre zuhan. Erre példa a TLT-IEF kombináció. Ha a korreláció -1-hez van közel, akkor azt lehet mondani, hogy amikor az egyik ETF szárnyal, akkor a másik zuhan, erre példa a SPY-TLT kombináció. (Nem véletlenül találták ki a részvény+kötvény portfoliókat.) A korreláció 0 körüli értéke azt mutatja, hogy két ETF egymástól függetlenül viselkedik, ilyen például az SPY-TIP.</p>
+<p>Mik is ezek a betűk?</p>
+<ul>
+<li>SPY: amerikai részvények (konkrétan az 500 legnagyobb tőzsdei vállalat az USA-ban)</li>
+<li>FEZ: európai részvények (az 50 legnagyobb tőzsdei vállalat az EU-ba)</li>
+<li>EWJ: japán részvények (MSCI Japan indexben szereplő 322 vállalat)</li>
+<li>EEM: fejlődő országok részvényei (Kína, Dél-Korea, India, Brazília, Dél-Afrika, Oroszország, stb.)</li>
+<li>TLT: hosszú lejáratú (fix kamatozású) amerikai államkötvények (20+ év)</li>
+<li>IEF: közepes lejáratú (fix kamatozású) amerikai államkötvények (7-10 év)</li>
+<li>SHY: rövid lejáratú (fix kamatozású) amerikai államkötvények (1-3 év)</li>
+<li>TIP: az amerikai inflációt követő (változó kamatozású) államkötvények (TIPS)</li>
+<li>GLD: arany</li>
+</ul>
+<p>Három csoportot lehet azonosítani a korrelációs mátrixon:</p>
+<ol>
+<li>A részvény ETF-ek között erős a korreláció, ez az első csoport: SPY-FEZ-EWJ-EEM.</li>
+<li>A fix kötvények között szintén erős a korrláció, ez a 2. csoport: TLT-IEF-SHY.</li>
+<li>A harmadik csoportba az infláció követők kerültek: a TIPS-arany korreláció 0.72.</li>
+</ol>
+<p>Ez azért fontos, mert a vizsgált 14 évben láthatóan elsősorban az számított, hogy a portfolióban mennyi részvény, mennyi kötvény és mennyi infláció követő eszköz volt. Hogy konkrétan melyik ország részvényei vagy milyen lejárati idejű kötvények, az másodlagos volt. Hasonlóan az is másodlagos volt, hogy az infláció követését erre kialakított TIPS kötvényekkel vagy arany befektetéssel valósították meg.</p>
+<p>Nyilván nem teljesen mindegy, mert pl. a részvények közül az utóbbi években az amerikai piac látványosan felülteljesített a többi piachoz képest, míg korábban voltak időszakok, amikor a fejlődő országok vagy éppen Japán volt a favorit. De ez már inkább az időzítés témaköre, amit szerintem halandó ember úgysem tud kellő bizonyossággal eltalálni.</p>
+<p>Talán hasznosabb azt átgondolni, hogy a látott korrelációk vajon mennyit változhatnak a jövőben.</p>
+
+        
+      </article>
+      
+      <article>
+        
+        
+
+<header>
     <p class="meta">2019. január 13.
          - 1 perc olvasnivaló 
          - <a href="https://hzblog.github.io/blog/2019-01-13-fedezd-fel-a-tested/#disqus_thread">Comments</a>
@@ -331,35 +430,6 @@
         
       </article>
       
-      <article>
-        
-        
-
-<header>
-    <p class="meta">2018. november 30.
-         - 1 perc olvasnivaló 
-         - <a href="https://hzblog.github.io/blog/2018-11-30-nem-is-%C3%A9rdekel/#disqus_thread">Comments</a>
-
-    
-    
-      - <a class="label" href="https://hzblog.github.io/categories/tudatos/">tudatos </a>
-    
-  </p>
-  <h1 class="entry-title">
-    <a href="https://hzblog.github.io/blog/2018-11-30-nem-is-%C3%A9rdekel/">Nem is érdekel</a>
-  </h1>
-</header>
-
-        
-          <p>A teljes magyar felnőtt népesség 88%-a soha nem tájékozódik külföldi hírforrásokból.</p>
-<p>(Konkrétabban: 2% rendszeresen, 10% alkalmanként, 88% soha.)</p>
-<p><a href="http://mertek.eu/2018/11/26/a-politikai-tajekozodas-forrasai-magyarorszagon-trendek-2015-18/">Mérték</a>
-<a href="http://mertek.eu/wp-content/uploads/2018/11/A_politikai_tajekozodas_forrasai_Magyarorszagon_2018.pdf">PDF</a>
-<a href="https://index.hu/kultur/media/2018/11/27/a_politikai_tajekozodas_forrasai_magyarorszagon_2018/">Index</a></p>
-
-        
-      </article>
-      
       
       
 
@@ -461,6 +531,12 @@
           
           
             
+              <li class="post">
+                <a href="/blog/2020-01-10-j%C3%B3ga-%C3%A9s-az-%C3%B6reged%C3%A9s/">Jóga és az öregedés</a>
+              </li>
+            
+          
+            
           
             
               <li class="post">
@@ -504,12 +580,6 @@
               </li>
             
           
-            
-              <li class="post">
-                <a href="/blog/2019-12-08-a-gazdas%C3%A1g-g%C3%A9pezete/">A gazdaság gépezete</a>
-              </li>
-            
-          
         </ul>
       </section>
     
@@ -535,7 +605,7 @@
   </div>
 </div>
     <footer role="contentinfo">
-      <p>Copyright &copy; 2019 hz - <a href="https://hzblog.github.io/license/">License</a> -
+      <p>Copyright &copy; 2020 hz - <a href="https://hzblog.github.io/license/">License</a> -
         <span class="credit">Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> and <a target="_blank" href="https://github.com/parsiya/hugo-octopress/">Hugo-Octopress</a> theme.
       </p>
     </footer>
